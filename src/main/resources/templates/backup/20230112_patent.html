@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/front/common :: head('상승 특허 특허 출원 서비스')">
+
+
+</head>
+
+<body id="body">
+
+	<div id="wrapper">
+		<th:block th:replace="fragments/front/common :: headMenu"></th:block>
+		<div class="clearfix"></div>
+
+		<div id="titlebar"
+			style="background: url('/front/images/new/title_background/13.jpg');">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h3 class="headline centered margin-top-75 page-title">
+							<strong class="mb-15">상승국제특허법률사무소</strong>
+							<p>Patent Application Service</p>
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container scroll margin-bottom-75" id="patent-detail">
+			<div class="row">
+				<div class="col-md-12">
+					<h3 class="headline centered">
+						<strong class="headline-with-separator">특허 출원 상세</strong> <span>Patent
+							Application Detail</span>
+					</h3>
+				</div>
+				<div class="col-lg-12 col-md-12">
+					<div class="pricing-container margin-top-30">
+						<div class="plan">
+							<div class="plan-price">
+								<h3>특허 기본 출원</h3>
+								<h3 class="period mb-0 mt-0">
+									1,200,000 <span class="small"> 원/건 부터</span>
+								</h3>
+								<span class="period"> # 특허청 관납료 : 69,900원 별도 </span>
+							</div>
+
+							<div class="plan-features">
+								<ul>
+									<li><i class="sl sl-icon-check"></i>특허청 <strong>심판관/심사관
+											출신</strong> 변리사 선임</li>
+									<li><i class="sl sl-icon-check"></i>선임 및 대리인등록 간편진행</li>
+									<li><i class="sl sl-icon-check"></i>출원 상담 및 절차관리</li>
+									<li><i class="sl sl-icon-check"></i><strong>출원
+											가능성 판단</strong> 후 출원 진행</li>
+
+								</ul>
+							<!-- 	<a class="button border service-apply-btn"
+									href="/my/contactPatent">서비스신청</a> -->
+							</div>
+
+						</div>
+						<div class="plan">
+							<div class="plan-price">
+								<h3>특허 심화 출원</h3>
+								<h3 class="period mb-0">
+									1,400,000 <span class="small"> 원/건 부터</span>
+								</h3>
+								<span class="period"> # 특허청 관납료 : 69,900원 별도 </span>
+							</div>
+
+							<div class="plan-features">
+								<ul>
+									<li><i class="sl sl-icon-check"></i>특허청 <strong>심판관/심사관
+											출신</strong> 변리사 선임</li>
+									<li><i class="sl sl-icon-check"></i>고객 담당 직원 배정 및 관리</li>
+									<li><i class="sl sl-icon-check"></i>선임 절차 간편진행</li>
+									<li><i class="sl sl-icon-check"></i>출원 상담 및 절차관리</li>
+									<li><i class="sl sl-icon-check"></i><strong>선행 기술
+											조사</strong></li>
+									<li><i class="sl sl-icon-check"></i><strong>등록
+											가능성 판단 및 조사보고서 제공</strong></li>
+									<li><i class="sl sl-icon-check"></i><strong>등록
+											가능성에 대한 솔루션 제공</strong></li>
+								</ul>
+								<!-- <a class="button border service-apply-btn"
+									href="/my/contactPatent">서비스신청</a> -->
+							</div>
+						</div>
+
+						<div class="plan">
+							<div class="plan-price">
+								<h3>특허 스피드 출원</h3>
+								<h3 class="period mb-0">
+									1,600,000 <span class="small"> 원/건 부터</span>
+								</h3>
+								<span class="period"> # 특허청 관납료 : 69,900원 별도 </span>
+							</div>
+
+							<div class="plan-features">
+								<ul>
+									<li><i class="sl sl-icon-check"></i>특허청 <strong>심판관/심사관
+											출신</strong> 변리사 선임</li>
+									<li><i class="sl sl-icon-check"></i>고객 담당 직원 배정 및 관리</li>
+									<li><i class="sl sl-icon-check"></i>선임 절차 간편진행</li>
+									<li><i class="sl sl-icon-check"></i>출원 상담 및 절차관리</li>
+									<li><i class="sl sl-icon-check"></i><strong>선행 기술
+											조사</strong></li>
+									<li><i class="sl sl-icon-check"></i><strong>등록
+											가능성 판단 및 조사보고서 제공</strong></li>
+									<li><i class="sl sl-icon-check"></i><strong>등록
+											가능성에 대한 솔루션 제공</strong></li>
+									<li><i class="sl sl-icon-check"></i><strong>우선심사신청
+											진행</strong></li>
+								</ul>
+								<!-- <a class="button border service-apply-btn"
+									href="/my/contactPatent">서비스신청</a> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container scroll margin-bottom-75" id="patent-cost">
+			<div class="row">
+				<div class="col-md-12">
+					<h3 class="headline centered">
+						<strong class="headline-with-separator">비용 안내</strong> <span>Patent
+							Application Cost Information</span>
+					</h3>
+				</div>
+				<div class="col-md-12">
+					<div class="cost-text">
+						<div class="cost-subject">
+							<h3>
+								<i class="fa fa-fw">&#xf107;</i> 출원 비용 안내
+							</h3>
+						</div>
+						<div class="cost-content">
+							<p>
+								# 특허등록시 비용은 심사를 신청하는<span class="under"> 출원 시 비용 --- (1)
+								</span>과 심사를 통과 후 <span class="under"> 등록시 발생하는 비용 --- (2) </span>,그리고
+								심사 중간에 발생할 수 있는 <span class="under"> 중간대응 비용 --- (3) </span> 으로
+								구성되어 있습니다.
+							</p>
+							<p>
+								# 하기 금액은 <span class="under"> VAT가 포함된 금액</span> 입니다.
+							</p>
+
+						</div>
+					</div>
+					<table class="table table-bordered cost-table">
+						<thead>
+							<tr>
+								<th scope="col"></th>
+								<th scope="col"></th>
+								<th scope="col">기본</th>
+								<th scope="col">심화</th>
+								<th scope="col">스피드</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row" rowspan="5">출원시 비용</th>
+							</tr>
+							<tr>
+								<th scope="row">출원전략 상담 수수료<i class="sl sl-icon-check"></i></th>
+								<td>200,000 원</td>
+								<td>200,000 원</td>
+								<td>200,000 원</td>
+							</tr>
+							<tr>
+								<th scope="row">대리인 수수료<i class="sl sl-icon-check"></i></th>
+								<td>1,200,000 원 부터</td>
+								<td>1,200,000 원 부터</td>
+								<td>1,200,000 원 부터</td>
+							</tr>
+							<tr>
+								<th scope="row">관납료<i class="sl sl-icon-check"></i></th>
+								<td>69,900 원</td>
+								<td>69,900 원</td>
+								<td>69,900 원</td>
+							</tr>
+							<tr>
+								<th scope="row">선행특허 조사비용<br>(등록가능성 판단)
+								</th>
+								<td>---</td>
+								<td>200,000 원</td>
+								<td>200,000 원</td>
+							</tr>
+							<tr>
+								<th scope="row" rowspan="3">우선심사<a
+									href="https://www.kipo.go.kr/ko/kpoContentView.do?menuCd=SCD0200225">(우선심사요건
+										<i class="fa fa-fw">&#xf0a9;</i>)
+								</a>
+								</th>
+							</tr>
+							<tr>
+								<th scope="row">우선심사 수수료</th>
+								<td>---</td>
+								<td>---</td>
+								<td>200,000 원 부터</td>
+							</tr>
+							<tr>
+								<th scope="row">우선심사 관납료</th>
+								<td>---</td>
+								<td>---</td>
+								<td>200,000 원</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="cost-sub-text">
+						<div class="cost-sub-content">
+							<p>
+								# 특허 상담은 <span class="under">대면상담&방문상담(내방하여 상담을 진행함)</span>을
+								원칙으로 하고 있습니다.
+							</p>
+							<p>
+								# 변리사가 직접 방문하여 상담 진행시 <span class="under">200,000원</span>의 출장비용이
+								발생합니다.
+							</p>
+							<p>
+								# 출원전략 상담 수수료의 경우 <span class="under"> 출원 진행시 면제(대리인 수수료에
+									포함)</span> 됩니다.
+							</p>
+							<p>
+								# 상기 관납료의 경우 <span class="under"> 심사청구 1항을 기준으로</span> 작성 되었습니다.
+							</p>
+							<p>
+								# 대리인 수수료의 경우 <span class="under"> 난이도(기술분야 / 기술수준) 과 명세서
+									분량 등에 따라</span> 변경될 수 있습니다.
+							</p>
+							<p>
+								# 우선심사 수수료는 <span class="under"> 우선심사신청 자격요건에 따라 변경</span>될 수
+								있습니다.
+							</p>
+							<p># 관납료는 특허청으로 부터 할인받는 경우(개인/중소기업 - 70%할인)에는 변동될 수 있습니다.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12 margin-top-50">
+					<div class="cost-text">
+						<div class="cost-subject">
+							<h3>
+								<i class="fa fa-fw">&#xf107;</i> 중간사건 비용 안내
+							</h3>
+						</div>
+						<div class="cost-content">
+							<p>
+								# 중간사건 이라 함은 특허 출원절차 진행 중 형식과 실질 내용에 대한 <span class="under">특허청의
+									행정절차에 대응</span>하는 것 입니다.
+							</p>
+
+						</div>
+					</div>
+					<table class="table table-bordered cost-table">
+						<thead>
+							<tr>
+								<th scope="col"></th>
+								<th scope="col"></th>
+								<th scope="col">기본</th>
+								<th scope="col">심화</th>
+								<th scope="col">스피드</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row" rowspan="5">중간사건 비용</th>
+							</tr>
+							<tr>
+								<th scope="row">기본대응(기재불비 등 단순흠결)</th>
+								<td>200,000 원</td>
+								<td>200,000 원</td>
+								<td>200,000 원</td>
+							</tr>
+							<tr>
+								<th scope="row">심화대응(진보성 등 실체적 흠결)</th>
+								<td>400,000 원</td>
+								<td>400,000 원</td>
+								<td>400,000 원</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-md-12 margin-top-50">
+					<div class="cost-text">
+						<div class="cost-subject">
+							<h3>
+								<i class="fa fa-fw">&#xf107;</i> 등록 비용 안내
+							</h3>
+						</div>
+						<div class="cost-content">
+							<p>
+								# 등록 비용은 특허청에 특허가 등록되는 시점에 납입하는 비용으로 <span class="under">법률
+									대리인 수수료와 관납료로 </span>구성 됩니다.
+							</p>
+							<p># 관납료는 특허청으로 부터 할인받는 경우(개인/중소기업 - 70%할인)에는 변동될 수 있습니다.</p>
+							<p># 관납료는 청구항 1개 기준으로 작성 되었으며, 청구항 수에 따라 변동될 수 있습니다.</p>
+						</div>
+					</div>
+					<table class="table table-bordered cost-table">
+						<thead>
+							<tr>
+								<th scope="col"></th>
+								<th scope="col"></th>
+								<th scope="col">기본</th>
+								<th scope="col">심화</th>
+								<th scope="col">스피드</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row" rowspan="5">등록 비용</th>
+							</tr>
+							<tr>
+								<th scope="row">법률 대리인 수수료</th>
+								<td>900,000 원</td>
+								<td>900,000 원</td>
+								<td>900,000 원</td>
+							</tr>
+							<tr>
+								<th scope="row">관납료<i class="sl sl-icon-check"></i></th>
+								<td>33,300 원 부터</td>
+								<td>33,300 원 부터</td>
+								<td>33,300 원 부터</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-md-12 margin-top-50">
+					<div class="cost-text">
+						<div class="cost-subject">
+							<h3>
+								<i class="fa fa-fw">&#xf107;</i> 가출원/후출원/변경출원
+							</h3>
+						</div>
+						<div class="cost-content">
+							<p>
+								# 가출원-후출원이란 급하게 특허출원이 필요한 경우 빠르게 <span class="impor-text">임시로
+									출원(가출원)</span>을 한 후 추후 완성된 기술을 이용하여 <span class="impor-text">재출원(후출원)</span>을
+								통해 출원절차를 완성 하는 방법 입니다.
+							</p>
+							<p># 가출원 수수료 : 500,000원 부터 / 후출원 수수료 : 800,000원 부터</p>
+
+							<p>
+								# 변경출원이란 출원 절차 진행 중 <span class="impor-text">특허를 실용신안</span>으로,
+								또는 <span class="impor-text">실용신안을 특허</span>로 변경하여 출원하는 것을 말합니다.
+							</p>
+							<p># 변경출원 수수료 : 400,000원 부터
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section
+			class="fullwidth border-top padding-bottom-80 padding-top-80 margin-top-80"
+			id="patent-process">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h3 class="headline centered">
+							<strong class="headline-with-separator">특허출원 절차안내</strong> <span>Patent
+								Application Process Information</span>
+						</h3>
+					</div>
+					<div class="col-md-12">
+						<img src="/front/images/new/process/patent-detail.png" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+		<th:block th:replace="fragments/front/common :: footer"></th:block>
+	</div>
+	<th:block th:replace="fragments/front/common :: mainScript"></th:block>
+</body>
+
+</html>

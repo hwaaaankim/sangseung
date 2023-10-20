@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/front/common :: head('상승 특허 나의 특허 출원 신청 내역')">
+
+
+</head>
+<body>
+
+    <div id="wrapper">
+        <th:block th:replace="fragments/front/common :: dashboardHead"></th:block>
+        <div class="clearfix"></div>
+        <div id="dashboard">
+
+            <a href="#" class="dashboard-responsive-nav-trigger"><i class="fa fa-reorder"></i> Dashboard Navigation</a>
+
+           <th:block th:replace="fragments/front/common :: dashboardNav"></th:block>
+            <div class="dashboard-content">
+                <div id="titlebar">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <nav id="breadcrumbs">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li>특허 서비스 신청내역</li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="dashboard-list-box margin-top-0">
+                            <div class="booking-requests-filter">
+
+                                <div class="sort-by">
+                                    <div class="sort-by-select">
+                                        <select data-placeholder="Default order" class="chosen-select-no-single">
+                                            <option>== 상태별 조회 ==</option>
+                                            <option>접수중</option>
+                                            <option>출원중</option>
+                                            <option>심사중</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h4>특허 서비스 신청내역</h4>
+                            <ul>
+
+                                <li class="pending-booking">
+                                    <div class="list-box-listing bookings">
+                                        <div class="list-box-listing-img"><img
+                                                src="http://www.gravatar.com/avatar/00000000000000000000000000000000?d=mm&s=120"
+                                                alt=""></div>
+                                        <div class="list-box-listing-content">
+                                            <div class="inner">
+                                                <h3>이곳은 신청한 서비스의 제목이 들어가는 자리입니다. <span
+                                                        class="booking-status pending">보완중</span><span
+                                                        class="booking-status unpaid">출원중</span></h3>
+
+                                                <div class="inner-booking-list">
+                                                    <h5>서비스 신청일 : </h5>
+                                                    <ul class="booking-list">
+                                                        <li class="highlighted">2022.01.01</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="inner-booking-list">
+                                                    <h5>서비스 상세 : </h5>
+                                                    <ul class="booking-list">
+                                                        <li class="highlighted">서비스의 내용 요약이 들어가는 자리입니다.</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="inner-booking-list">
+                                                    <h5>결제금액 : </h5>
+                                                    <ul class="booking-list">
+                                                        <li class="highlighted">2,000,000원</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="inner-booking-list">
+                                                    <h5>담당자 : </h5>
+                                                    <ul class="booking-list">
+                                                        <li>담당직원이름</li>
+                                                        <li>email@email.com</li>
+                                                        <li>010-1234-1234</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="buttons-to-right">
+                                        <a href="#" class="button gray approve"><i class="sl sl-icon-check"></i>
+                                            상세보기</a>
+                                    </div>
+                                </li>
+
+                                <li class="pending-booking">
+                                    <div class="list-box-listing bookings">
+                                        <div class="list-box-listing-img"><img
+                                                src="http://www.gravatar.com/avatar/00000000000000000000000000000000?d=mm&s=120"
+                                                alt=""></div>
+                                        <div class="list-box-listing-content">
+                                            <div class="inner">
+                                                <h3>이곳은 신청한 서비스의 제목이 들어가는 자리입니다. <span
+                                                        class="booking-status pending">보완중</span><span
+                                                        class="booking-status unpaid">출원중</span></h3>
+
+                                                <div class="inner-booking-list">
+                                                    <h5>서비스 신청일 : </h5>
+                                                    <ul class="booking-list">
+                                                        <li class="highlighted">2022.01.01</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="inner-booking-list">
+                                                    <h5>서비스 상세 : </h5>
+                                                    <ul class="booking-list">
+                                                        <li class="highlighted">서비스의 내용 요약이 들어가는 자리입니다.</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="inner-booking-list">
+                                                    <h5>결제금액 : </h5>
+                                                    <ul class="booking-list">
+                                                        <li class="highlighted">2,000,000원</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="inner-booking-list">
+                                                    <h5>담당자 : </h5>
+                                                    <ul class="booking-list">
+                                                        <li>담당직원이름</li>
+                                                        <li>email@email.com</li>
+                                                        <li>010-1234-1234</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="buttons-to-right">
+                                        <a href="#" class="button gray approve"><i class="sl sl-icon-check"></i>
+                                            상세보기</a>
+                                    </div>
+                                </li>
+                                <li class="pending-booking">
+                                    <div class="list-box-listing bookings">
+                                        <div class="list-box-listing-img"><img
+                                                src="http://www.gravatar.com/avatar/00000000000000000000000000000000?d=mm&s=120"
+                                                alt=""></div>
+                                        <div class="list-box-listing-content">
+                                            <div class="inner">
+                                                <h3>이곳은 신청한 서비스의 제목이 들어가는 자리입니다. <span
+                                                        class="booking-status">출원완료</span></h3>
+
+                                                <div class="inner-booking-list">
+                                                    <h5>서비스 신청일 : </h5>
+                                                    <ul class="booking-list">
+                                                        <li class="highlighted">2022.01.01</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="inner-booking-list">
+                                                    <h5>서비스 상세 : </h5>
+                                                    <ul class="booking-list">
+                                                        <li class="highlighted">서비스의 내용 요약이 들어가는 자리입니다.</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="inner-booking-list">
+                                                    <h5>결제금액 : </h5>
+                                                    <ul class="booking-list">
+                                                        <li class="highlighted">2,000,000원</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="inner-booking-list">
+                                                    <h5>담당자 : </h5>
+                                                    <ul class="booking-list">
+                                                        <li>담당직원이름</li>
+                                                        <li>email@email.com</li>
+                                                        <li>010-1234-1234</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="buttons-to-right">
+                                        <a href="#" class="button gray approve"><i class="sl sl-icon-check"></i>
+                                            상세보기</a>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="copyrights">© 2022 SangSeung. All Rights Reserved.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <th:block th:replace="fragments/front/common :: dashboardScript"></th:block>
+
+</body>
+
+</html>

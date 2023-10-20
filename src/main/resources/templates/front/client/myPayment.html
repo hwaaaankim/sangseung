@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/front/common :: head('상승 특허 나의 결제 내역')">
+
+
+</head>
+<body>
+
+    <div id="wrapper">
+        <th:block th:replace="fragments/front/common :: dashboardHead"></th:block>
+        <div class="clearfix"></div>
+        <div id="dashboard">
+
+            <a href="#" class="dashboard-responsive-nav-trigger"><i class="fa fa-reorder"></i> Dashboard Navigation</a>
+			<th:block th:replace="fragments/front/common :: dashboardNav"></th:block>
+            
+            <div class="dashboard-content">
+                <div id="titlebar">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <nav id="breadcrumbs">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li>My Payment</li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="dashboard-list-box invoices with-icons margin-top-20">
+                            <h4>결제 내역</h4>
+                            <ul>
+
+                                <li><i class="list-box-icon sl sl-icon-wallet"></i>
+                                    <strong>신속상표출원 서비스</strong>
+                                    <ul>
+                                        <li>금액 : 200,000원</li>
+                                        <li>주문번호 : #00124</li>
+                                        <li>신청날짜 : 2022.01.01</li>
+                                        <li class="unpaid">결제상태 : <span>Unpaid</span></li>
+                                    </ul>
+                                </li>
+
+                                <li><i class="list-box-icon sl sl-icon-wallet"></i>
+                                    <strong>신속특허출원 서비스</strong>
+                                    <ul>
+                                        <li>금액 : 1200,000원</li>
+                                        <li>주문번호 : #00123</li>
+                                        <li>신청날짜 : 2022.01.02</li>
+                                        <li class="paid">결제상태 : <span>Paid</span></li>
+                                    </ul>
+                                </li>
+                                <li><i class="list-box-icon sl sl-icon-wallet"></i>
+                                    <strong>신속상표출원 서비스</strong>
+                                    <ul>
+                                        <li>금액 : 200,000원</li>
+                                        <li>주문번호 : #00124</li>
+                                        <li>신청날짜 : 2022.01.01</li>
+                                        <li class="unpaid">결제상태 : <span>Unpaid</span></li>
+                                    </ul>
+                                </li>
+
+                                <li><i class="list-box-icon sl sl-icon-wallet"></i>
+                                    <strong>신속특허출원 서비스</strong>
+                                    <ul>
+                                        <li>금액 : 1200,000원</li>
+                                        <li>주문번호 : #00123</li>
+                                        <li>신청날짜 : 2022.01.02</li>
+                                        <li class="paid">결제상태 : <span>Paid</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="sidebar-textbox">
+                            <p># 서비스 이용 및 결제에 관하여는 <a href="">서비스 이용약관</a>을 참고해 주시기 바랍니다.</p>
+                            <p># 결제 관련된 문의는 아래 정보를 이용하시기 바랍니다.</p>
+                            <ul class="contact-details">
+                                <li><i class="im im-icon-Phone-2"></i> <strong>Phone:</strong> <span>02-6737-3921
+                                    </span></li>
+                                <li><i class="im im-icon-Envelope"></i> <strong>E-Mail:</strong> <span><a href="#"></a>
+                                        info@winwinpatent.com</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="copyrights">© 2022 SangSeung. All Rights Reserved.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   <th:block th:replace="fragments/front/common :: dashboardScript"></th:block>
+
+</body>
+
+</html>

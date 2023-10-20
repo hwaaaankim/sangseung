@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html 
+xmlns:th="http://www.thymeleaf.org"
+xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head th:replace="/fragments/front/common :: head('최고의 등록률은 상승 특허')">
+
+</head>
+
+<body>
+
+	<div id="wrapper">
+		<th:block th:replace="/fragments/front/common :: headMenu"></th:block>
+		<div class="clearfix"></div>
+		<div class="home-search-carousel carousel-not-ready">
+			<div class="home-search-slide"
+				style="background-image: url(/front/images/new/index/2.jpg)">
+				<div class="home-search-slider-headlines">
+					<div class="container">
+						<div class="col-md-12">
+							<h3>
+								소상공인 여러분의 <a href="javascript:void(0)">비즈니스 필수병기는</a>
+							</h3>
+							<h3>상표권 입니다.</h3>
+						</div>
+						<div class="col-md-12 main-content">
+							<p>여러분의 상승과 함께한다면,</p>
+							<p>20년 이상 경력의 상표심사관 / 심판관의 경험과 노하우를</p>
+							<p>당신의 비즈니스에 더할 수 있습니다.</p>
+							<a href="/my/contactMarkup"
+								class="button border main-service-btn"><i
+								class="sl sl-icon-arrow-right-circle"></i>상표 신청하기</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="home-search-slide"
+				style="background-image: url(/front/images/new/index/3.jpg)">
+				<div class="home-search-slider-headlines">
+					<div class="container">
+						<div class="col-md-12">
+							<h3>
+								기술 벤처기업의 비즈니스 <a href="javascript:void(0)">최고의 무기는</a>
+							</h3>
+							<h3>특허권 입니다.</h3>
+						</div>
+						<div class="col-md-12 main-content">
+							<p>상승과 함께 특허청 출신의 특허심사관의 경험과 노하우,</p>
+							<p>공학 전문 변리사의 기술역량을 통해</p>
+							<p>당신의 경쟁력과 기술을 완성하시기 바랍니다.</p>
+							<a href="/my/contactPatent"
+								class="button border main-service-btn"><i
+								class="sl sl-icon-arrow-right-circle"></i>특허 신청하기</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="home-search-slide"
+				style="background-image: url(/front/images/new/index/design-main.jpg)">
+				<div class="home-search-slider-headlines">
+					<div class="container">
+						<div class="col-md-12">
+							<h3>
+								트렌디한 비즈니스의<a href="javascript:void(0)"> 숨겨진 해답은</a>
+							</h3>
+							<h3>디자인권 입니다.</h3>
+						</div>
+						<div class="col-md-12 main-content">
+							<p>상승과 함께 디자인 심사관 / 심판관의 경험으로</p>
+							<p>당신의 기술과 경쟁력에 '디자인' 이라는 최고의 무기를</p>
+							<p>더할 수 있습니다.</p>
+							<a href="/my/contactDesign"
+								class="button border main-service-btn"><i
+								class="sl sl-icon-arrow-right-circle"></i>디자인 신청하기</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<section
+			class="fullwidth margin-top-0 padding-top-0 padding-bottom-40">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h3 class="headline centered margin-top-75">
+							<strong class="headline-with-separator">Remember</strong> <span>특허/상표/디자인출원은
+								<i class="strong">단순히 법률적 이슈를 넘어 기술적 공학적 전문 지식을 요구하는</i> 종합적인
+								상담이 중요합니다.
+							</span>
+						</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6 col-lg-6 col-md-6 mb-20 h-400"
+						style="background: url('/front/images/new/remember/new/l1.png');">
+						<div class="post-content left">
+							<p class="remember-subject">과연 등록만 되었다고 해서</p>
+							<p class="remember-subject">좋은 특허 일까요?</p>
+							<p class="remember-subject">좋은 특허는 어떤 특허일까요?</p>
+
+						</div>
+					</div>
+					<div class="col-6 col-lg-6 col-md-6 h-400 mb-20"
+						style="background: url('/front/images/new/remember/new/r1.png')">
+
+						<div class="post-content right">
+							<p class="remember-subject">높은 등록률은 기본이고,</p>
+							<p class="remember-subject">나의 소중한 기술과</p>
+							<p class="remember-subject">나의 비즈니스를 지킬 수 있는</p>
+							<p class="remember-subject">그런 특허가 좋은 특허 입니다.</p>
+							
+							<p class="remember-content">나의 특허가 외부로부터 나의 기술과 비즈니스를 정확하게 지키고 있는지, 
+							지금 바로 상승에서 확인하세요.</p>
+							<a href="/my/contactPatent" class="read-more">특허 신청하기 <i
+								class="fa fa-angle-right"></i></a>
+						</div>
+					</div>
+					<div class="col-6 col-lg-6 col-md-6 mb-20 h-400"
+						style="background: url('/front/images/new/remember/new/l2.png');">
+						<div class="post-content left">
+							<p class="remember-subject">문자상표/도형상표/복합상표?</p>
+							<p class="remember-subject">무엇이 다를까요?</p>
+							<p class="remember-subject">동일한 상표가 있다면</p>
+							<p class="remember-subject">등록은 불가능 한 걸까요?</p>
+						</div>
+					</div>
+					<div class="col-6 col-lg-6 col-md-6 h-400 mb-20"
+						style="background: url('/front/images/new/remember/new/r2.png')">
+						<div class="post-content right">
+							<p class="remember-subject">상표는 상표 뿐 아니라 상품까지</p>
+							<p class="remember-subject">정확하게 알아야 합니다.</p>
+							<p class="remember-subject">정확하게 알고 출원해야</p>
+							<p class="remember-subject">등록률은 물론 권리보호까지!</p>
+							<p class="remember-content">
+								<strong>상승</strong>에서 지금 상표를 정확하게, 그리고 확실하게 등록할 수 있는 솔루션을 확인하세요!
+							</p>
+							<a href="/my/contactMarkup" class="read-more">상표 신청하기<i
+								class="fa fa-angle-right"></i></a>
+						</div>
+					</div>
+					<div class="col-6 col-lg-6 col-md-6 mb-20 h-400"
+						style="background: url('/front/images/new/remember/new/l3.png');">
+						<div class="post-content left">
+							<p class="remember-subject">특허출원이 어려우신가요?</p>
+							<p class="remember-subject">특허 등록이 안된다면</p>
+							<p class="remember-subject">나의 비즈니스와 기술은</p>
+							<p class="remember-subject">보호 받을 수 없는걸까요?</p>
+						</div>
+
+					</div>
+					<div class="col-6 col-lg-6 col-md-6 h-400 mb-20"
+						style="background: url('/front/images/new/remember/new/r3.png')">
+						<div class="post-content right">
+							<p class="remember-subject">
+								<strong>디자인권</strong>은 나의 기술보호를 위한
+							</p>
+							<p class="remember-subject">또 다른 훌륭한 수단입니다.</p>
+							<p class="remember-subject">제품에 따라서는</p>
+							<p class="remember-subject">특허보다 강력할 수 있습니다!</p>
+							<p class="remember-content">특허 등록이 안된다고해서, 혹은 기술이 어렵다고해서 포기하지 말고
+							지금 상승에서 나의 권리를 보호할 수 있는 솔루션을 찾아 보세요!</p>
+							<a href="/my/contactDesign" class="read-more">디자인 신청하기<i
+								class="fa fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section
+			class="fullwidth margin-top-0 padding-top-0 padding-bottom-40">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-12">
+						<h3 class="headline centered margin-top-75">
+							<strong class="headline-with-separator">상승과 함께라면?</strong> <span>-
+								특허와 상표, 디자인의 <i class="strong">등록률이 상승(上昇)</i>합니다.
+							</span> <span>- 여러분 비즈니스의 <i class="strong">경쟁력이 상승(上昇)</i>합니다.
+							</span> <span>- 항상 승리(常勝)할 수 있도록 <i class="strong">최강의 비즈니스
+									전략을</i> 제공합니다.
+							</span>
+						</h3>
+					</div>
+				</div>
+			</div>
+			<div class="fullwidth-carousel-container margin-top-50 main-carousel">
+				<div
+					class="fullwidth-slick-carousel category-carousel main-carousel-wrap">
+					<div class="fw-carousel-item">
+						<div class="category-box-container">
+							<img src="/front/images/new/index/1-11.jpg">
+						</div>
+					</div>
+					<div class="fw-carousel-item">
+						<div class="category-box-container">
+							<img src="/front/images/new/index/2-22.jpg">
+						</div>
+					</div>
+					<div class="fw-carousel-item">
+						<div class="category-box-container">
+							<img src="/front/images/new/index/3-33.jpg">
+						</div>
+					</div>
+					<div class="fw-carousel-item">
+						<div class="category-box-container">
+							<img src="/front/images/new/index/4-44.jpg">
+						</div>
+					</div>
+					<div class="fw-carousel-item">
+						<div class="category-box-container">
+							<img src="/front/images/new/index/5-55.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="container margin-top-70" id="main-service-container">
+			<div class="row">
+
+				<div class="col-md-12">
+					<h3 class="headline centered margin-bottom-45">
+						<strong class="headline-with-separator">상승의 서비스</strong> <span>다양한
+							분야의 기술 전문 연구진과 <i class="strong">특허청 심사관/심판관 출신의 변리사</i>들이 최고의 서비스를
+							제공합니다.
+						</span>
+					</h3>
+				</div>
+
+				<div class="col-md-12">
+					<div class="style-1">
+						<div class="tabs-container">
+							<div class="tab-content">
+								<div class="row">
+									<div class="col-lg-12 col-md-12">
+										<div class="pricing-container margin-top-30">
+											<div class="plan">
+												<div class="plan-price">
+													<h3>특허 기본 출원</h3>
+													<h3 class="period mb-0 mt-0">
+														1,200,000 <span class="small"> 원/건 부터</span>
+													</h3>
+													<span class="period"> # 특허청 관납료 : 69,900원 별도 </span>
+												</div>
+
+												<div class="plan-features">
+													<ul>
+														<li><i class="sl sl-icon-check"></i>특허청 <strong>심판관/심사관
+																출신</strong> 변리사 선임</li>
+														<li><i class="sl sl-icon-check"></i>선임 및 대리인등록 간편진행</li>
+														<li><i class="sl sl-icon-check"></i>출원 상담 및 절차관리</li>
+														<li><i class="sl sl-icon-check"></i><strong>출원
+																가능성 판단</strong> 후 출원 진행</li>
+
+													</ul>
+													<a class="button border service-apply-btn"
+														href="/patent">자세히 보기</a>
+												</div>
+
+											</div>
+											<div class="plan">
+												<div class="plan-price">
+													<h3>상표 기본 출원</h3>
+													<h3 class="period mb-0">
+														75,000 <span class="small"> 원/건 부터</span>
+													</h3>
+													<span class="period"> # 특허청 관납료 : 56,000원 별도 </span>
+												</div>
+
+												<div class="plan-features">
+													<ul>
+														<li><i class="sl sl-icon-check"></i>특허청 <strong>심판관/심사관
+																출신</strong> 변리사 선임</li>
+														<li><i class="sl sl-icon-check"></i>선임 및 대리인등록 간편진행</li>
+														<li><i class="sl sl-icon-check"></i>출원 상담 및 절차관리</li>
+														<li><i class="sl sl-icon-check"></i><strong>출원
+																가능성 판단</strong> 후 출원 진행</li>
+
+													</ul>
+													<a class="button border service-apply-btn"
+														href="/markup">자세히 보기</a>
+												</div>
+
+											</div>
+
+											<div class="plan">
+												<div class="plan-price">
+													<h3>디자인 기본 출원</h3>
+													<h3 class="period mb-0">
+														200,000 <span class="small"> 원/건 부터</span>
+													</h3>
+													<span class="period"> # 특허청 관납료 : 28,200원 별도 </span>
+												</div>
+
+												<div class="plan-features">
+													<ul>
+														<li><i class="sl sl-icon-check"></i>특허청 <strong>심판관/심사관
+																출신</strong> 변리사 선임</li>
+														<li><i class="sl sl-icon-check"></i>선임 및 대리인등록 간편진행</li>
+														<li><i class="sl sl-icon-check"></i>출원 상담 및 절차관리</li>
+														<li><i class="sl sl-icon-check"></i>출원 가능성 판단 후 출원 진행</li>
+
+													</ul>
+													<a class="button border service-apply-btn"
+														href="/design">자세히 보기</a>
+												</div>
+
+											</div>
+										</div>
+										<div class="margin-top-100 process-wrap">
+											<div class="col-md-12">
+												<h3 class="headline centered margin-bottom-45">
+													<strong class="headline-with-separator">상승 서비스 절차</strong>
+													<span>상승은 고객분들께<i class="strong"> 간소화된 절차와 최상의
+															등록률을 </i>제공합니다.
+													</span>
+												</h3>
+											</div>
+											<img src="/front/images/new/markup-process.jpg" width="100%">
+											<p>* 자세한 절차 및 비용은 상세 페이지에서 확인할 수 있습니다.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section
+			class="fullwidth margin-top-70 padding-top-75 padding-bottom-70"
+			data-background-color="#0056aa">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div
+							class="categories-boxes-container-alt margin-top-5 margin-bottom-30">
+
+							<a href="#" class="category-small-box-alt"> <i
+								class="im im-icon-Mail-Outbox"></i>
+								<h4>특허/디자인 출원 건수</h4> <span class="category-box-counter-alt">1,200건
+									이상</span> <img src="/front/images/new/history.jpg">
+							</a> <a href="#" class="category-small-box-alt"> <i
+								class="im im-icon-Boom"></i>
+								<h4>상표 출원 건수</h4> <span class="category-box-counter-alt">1,300건
+									이상</span> <img src="/front/images/new/history.jpg">
+							</a> <a href="#" class="category-small-box-alt"> <i
+								class="im im-icon-Check"></i>
+								<h4>특허 심사 건수</h4> <span class="category-box-counter-alt">2,300건
+									이상</span> <img src="/front/images/new/history.jpg">
+							</a> <a href="#" class="category-small-box-alt"> <i
+								class="im im-icon-Checked-User"></i>
+								<h4>상표/디자인 심판대리 건수</h4> <span class="category-box-counter-alt">200회 <br>이상</span>
+								<img src="/front/images/new/history.jpg">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section
+			class="fullwidth margin-top-0 padding-top-75 padding-bottom-75"
+			data-background-color="#fff">
+			<div class="container">
+
+				<div class="col-md-12">
+					<h3 class="headline centered">
+						<strong class="headline-with-separator">Key Point</strong> <span>특허/상표/디자인
+							서비스는 <i class="strong">다음과 같은 Point를 꼭 확인하고</i> 이용 하셔야 합니다.
+						</span>
+					</h3>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<a href="#" class="blog-compact-item-container">
+							<div class="blog-compact-item">
+								<img src="/front/images/new/point/point01.png" alt="">
+								<div class="blog-compact-item-content">
+									<ul class="blog-post-tags">
+										<li># 서류 및 행정 대행 서비스가 아닙니다.</li>
+									</ul>
+									<h3>정확한 법률 상담이 중요합니다.</h3>
+									<p>지식재산권의 경우 명세서의 단어 하나, 문장 하나로도 권리범위가 크게 달라질 수 있고, 이는 고객의
+										권리범위에 큰 변화를 가져오게됩니다. 정확한 법률 상담이 중요합니다.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="#" class="blog-compact-item-container">
+							<div class="blog-compact-item">
+								<img src="/front/images/new/point/point02.png" alt="">
+								<div class="blog-compact-item-content">
+									<ul class="blog-post-tags">
+										<li># 출원하고자 하는 대상이 중요합니다.</li>
+									</ul>
+									<h3>상표와 상호는 다릅니다.</h3>
+									<p>
+										내가 출원하고자 하는 대상이 상품인지, 아니면 서비스인지에 따라서 출원하는 대상과 절차가 달라집니다.<strong>
+											동일한 상표가 있다고 해도 상품이 다르면 등록될 수 있습니다.</strong>
+									</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="#" class="blog-compact-item-container">
+							<div class="blog-compact-item">
+								<img src="/front/images/new/point/point03.png" alt="">
+								<div class="blog-compact-item-content">
+									<ul class="blog-post-tags">
+										<li># 기술자문을 지원합니다.</li>
+									</ul>
+									<h3>아이디어를 지원합니다.</h3>
+									<p>고객의 기술속한 기술범위가 어떠한 과거로 부터 어떤 미래로 나아가게 되는지 방향성을 그리고, 그
+										방향성 내에서 좋은 위치를 선점할 수 있도록 기술 자문이 중요합니다.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<th:block th:replace="/fragments/front/common :: footer"></th:block>
+	</div>
+	<div id="image-popup" class="popups image-popup">
+		<div class="contentBox">
+			<div class="close-wrap">
+				<div class="close" id="imagePopupClose">
+					<i class="fa-solid fa-x"></i>
+				</div>
+			</div>
+			<div class="subject-wrap">
+				<h1>[특허청] 우수심사관 표창</h1>
+			</div>
+			<div class="content-wrap">
+				<div class="imgBx">
+					<img src="/front/images/new01/prize.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="popups" class="popups">
+		<div class="contentBox">
+			<div class="close-wrap">
+				<div class="close" id="popupClose">
+					<i class="fa-solid fa-x"></i>
+				</div>
+			</div>
+			<div class="subject-wrap">
+				<h1>[김수섭의 특허로 읽는 손자병법 이야기] 제7편 군쟁(軍爭)</h1>
+				<span><i class="fa-regular fa-user"></i>김수섭 상승국제특허법률사무소 대표변리사</span><span><i
+					class="fa-regular fa-clock"></i>2017.07.12 07:44</span>
+			</div>
+			<div class="content-wrap">
+				<div class="imgBx">
+					<img src="/front/images/new01/image.jpg">
+				</div>
+				<div class="content">
+					<p>가끔 어떤 제품에 대해 특허권 또는 디자인권이 등록되어 있는지 여부에 대한 조사를 의뢰받는다. 
+시장반응이 괜찮아 생산하고 싶은 제품이지만 특허권 또는 디자인권 등의 존재 여부가 우려되어서인데 통상 이런 제품들은 나름대로 기술적 특징이나 디자인적 요소가 있는 경우가 많다. 실제로 조사해 보면 많은 경우 관련 특허권이나 디자인권이 등록되어
+있는데 이는 창작을 보호하는 지식재산권에 대한 인식이 높아져 기업들이 제품 출시 이전에 반드시 특허 등 지식재산권을 출원하고 있음을 피부로 느낄 수 있는 부분이다. 
+조사 결과를 검토해 보면 해당 지식재산권의 보호범위가 협소해 문제가 되지 않는 경우도 있지만 해당 제품을 그대로 모방해서는 특허권 등 지식재산권 침해에 해당하는 경우가 대부분이다.
+그렇지만 조금 더 생각해보면 해당 제품시장에 진입할 방안이 전혀 없는 것도 아니다.</p>
+				</div>
+			</div>
+			<div class="btn-wrap">
+				<a target="_blank" href="https://www.econovill.com/news/articleView.html?idxno=318174">뉴스기사 전문보기</a>
+			</div>
+		</div>
+	</div>
+
+	<th:block th:replace="/fragments/front/common :: mainScript"></th:block>
+	<script src="/front/scripts/detail.js"></script>
+	<script>
+		$(window).on('load', function() {
+			$('.msps-shapes').addClass('shapes-animation');
+		});
+
+
+		$('.msps-slider').slick({
+			infinite : true,
+			slidesToShow : 1,
+			slidesToScroll : 1,
+			dots : true,
+			arrows : false,
+			autoplay : true,
+			autoplaySpeed : 5000,
+			speed : 1000,
+			fade : true,
+			cssEase : 'linear'
+		});
+		$(function() {
+			$('.plan').on('mouseover',function() {
+				$(this).addClass('featured');
+				$(this).append('<div class="listing-badge">'
+									+ '<span class="featured">Featured</span>'
+									+ '</div>');
+								});
+			$('.plan').on('mouseout', function() {
+				$(this).removeClass('featured');
+				$('.listing-badge').remove();
+			});
+
+		});
+	</script>
+	<script src="/front/scripts/popup.js"></script>
+</body>
+
+</html>

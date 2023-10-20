@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/admin/common :: adminHead('관리자페이지')">
+
+</head>
+
+<body>
+    <section id="container">
+
+        <th:block th:replace="fragments/admin/common :: adminHeader"></th:block>
+
+        <th:block th:replace="fragments/admin/common :: adminSidebar('main')"></th:block>
+
+        <section id="main-content">
+            <section class="wrapper">
+                <div class="row mt">
+
+                </div>
+            </section>
+        </section>
+    </section>
+    
+    <th:block th:replace="fragments/admin/common :: adminScript"></th:block>
+
+</body>
+
+</html>

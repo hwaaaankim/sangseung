@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/front/common :: head('상승 특허 회원 정보 수정')">
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <th:block th:replace="fragments/front/common :: dashboardHead"></th:block>
+        <div class="clearfix"></div>
+        <div id="dashboard">
+
+            <a href="#" class="dashboard-responsive-nav-trigger"><i class="fa fa-reorder"></i> Dashboard Navigation</a>
+
+            <th:block th:replace="fragments/front/common :: dashboardNav"></th:block>
+            <div class="dashboard-content">
+                <div id="titlebar">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <nav id="breadcrumbs">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li>My Profile</li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="dashboard-list-box margin-top-0">
+                            <h4 class="gray">내정보변경</h4>
+							<form method="post" action="/my/myInfoChange" onsubmit="return infoChange();">
+	                            <div class="dashboard-list-box-static">
+	                                <p class="info-message"># 아이디는 변경할 수 없습니다.</p>
+	                                <p class="info-message"># 아래 정보는 원활한 업무처리를 위해 정확하게 입력해 주시기 바랍니다.</p>
+	                                <div class="my-profile">
+	                                    <label class="margin-top-0">성함</label>
+	                                    <input type="text" name="name" th:value="${member.name}">
+										<input type="hidden" name="key" value="INFO">
+										<input type="hidden" name="username" th:value="${member.username}">
+										<input type="hidden" name="id" th:value="${member.id}">
+										<label>업체명</label>
+	                                    <input type="text" name="business" th:value="${member.business}">
+		
+	                                    <label>연락처</label>
+	                                    <input type="text" name="phone" th:value="${member.phone}"
+	                                    oninput="autoHyphen(this)" maxlength="13"
+	                                    id="phone">
+	                                    
+	                                    <label>이메일</label>
+	                                    <input type="email" name="email" th:value="${member.email}">
+	                                    <button type="submit" class="button margin-top-15">회원정보변경</button>
+	                                </div>
+	                            </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <div class="dashboard-list-box margin-top-0">
+                            <h4 class="gray">비밀번호변경</h4>
+                            <form method="post" action="/my/myInfoChange" onsubmit="return inCheck();">
+	                            <div class="dashboard-list-box-static">
+	
+	                                <div class="my-profile">
+	                                    <label class="margin-top-0">현재 비밀번호</label>
+	                                    <input type="password" id="password" name="expassword" required="required">
+	                                    <p id="pCheckBox" class="alert-message"></p>
+										<input type="hidden" name="key" value="PASS">
+										<input type="hidden" name="id" th:value="${member.id}">
+										<input type="hidden" name="username" id="username" th:value="${member.username}">
+	                                    <label>새로운 비밀번호</label>
+	                                    <input type="password" id="newPassword" name="password" required="required">
+	                                    
+	
+	                                    <label>새로운 비밀번호확인</label>
+	                                    <input type="password" id="newPasswordCheck" required="required">
+										<p id="nCheckBox" class="alert-message"></p>
+											
+	                                    <button type="submit" class="button margin-top-15">비밀번호변경</button>
+	                                </div>
+	
+	                            </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="copyrights">© 2022 SangSeung. All Rights Reserved.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+	<script>
+		var regType = /^[A-Za-z0-9]*$/;
+		const autoHyphen = (target) => {
+		   target.value = target.value
+		     .replace(/[^0-9]/g, '')
+		    .replace(/^(\d{0,3})(\d{0,4})(\d{0,4})$/g, "$1-$2-$3").replace(/(\-{1,2})$/g, "");
+		  }
+		function infoChange(){
+			var result = confirm('정보를 변경 하시겠습니까?');
+			if(result){
+				return true;
+			}
+		}
+		function inCheck(){
+			var password = document.getElementById('password');
+			var username = document.getElementById('username');
+			var pCheckBox = document.getElementById('pCheckBox');
+			var nCheckBox = document.getElementById('nCheckBox');
+			var nPassword = document.getElementById('newPassword');
+			var nPasswordCheck = document.getElementById('newPasswordCheck');
+			var pCheck = false;
+			var nCheck = false;
+			
+			$.ajax({
+				type:'post',
+				url:'/my/memberPassCheck',
+				async:false,
+				data:{
+					username:username.value,
+					password:password.value,
+				},
+				success:function(result){
+					const data = $.trim(result)
+					if(data === 'success'){
+						pCheckBox.innerText = '';
+						pCheck = true;
+					}else if(data === 'fail'){
+						pCheckBox.innerText = '# 기존 비밀번호가 잘못되었습니다. 다시 입력해 주세요.'
+					}
+				},
+				error:function(request, status, error){
+					alert('서버에러가 발생하였습니다. 관리자에게 문의하세요.');
+			   	}
+			});
+			
+			if(nPassword.value === nPasswordCheck.value){
+				nCheck = true;
+				nCheckBox.innerText = '';
+			}else{
+				nCheck = false;
+				nCheckBox.innerText = '# 비밀번호 확인을 정확하게 입력 해 주세요.'
+			}
+			
+			if(pCheck && nCheck){
+				console.log('true');
+				return true;
+				
+			}else{
+				return false;
+			} 
+		}
+	</script>
+	<th:block th:replace="fragments/front/common :: dashboardScript"></th:block>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+1. 배송조회 : 개발 가맹 등록 : 2주정도 심사 : 개발팀을 배정 
+2. 결제 : 카드 /  /  / 가상계좌 / 페이들(카카오네이버)
+3. 로그인보안
+3-1. sns 로그인 / + 국세청사업자조회시스템 
+
+[코잼랜딩]
+- 한글파일 참조
+- https://www.hiblocks.io
+
+템플릿
+https://trax.acrothemes.com/bootstrap-v5/single-index.html
+http://pivot.mediumra.re/one-page.html
+http://celegorm.coralixthemes.com/cyan/index.html
+https://preview.themeforest.net/item/sleek-with-mobirise-responsive-bootstrap-landing-page-builder/full_screen_preview/10401550?_ga=2.144818359.2021337720.1666056025-1701159937.1660617262
+http://rainbowit.net/html/trydo/11-landing-home-particles.html
+
+
+[회사소개]
+http://www.ko-sci.com/
+http://bionlifescience.com/
+http://www.maplels.com/
+https://knf.com/ko/kr
+https://i-bio.co.kr/
+
+템플릿
+http://abcgomel.ru/haswell/index.html
+https://sandbox.elemisthemes.com/demo27.html
+https://goldeyes.net/quadra/demo-law.html
+http://themes.potenzaglobalsolutions.com/html/webster-responsive-multi-purpose-html5-template/index-05.html
+
+[쇼핑몰]
+https://www.labplus.co.kr/
+https://www.musinsa.com
+https://www.kolabshop.com/
+https://www.allforlab.com/
+
+템플릿
+https://alothemes.com/html/milano/index2.html
+https://htmldemo.net/lavoro/lavoro/index-4.html
+http://wp.alithemes.com/html/nest/demo/index-3.html
+https://d-themes.com/angular/molla/demo4/
+https://mironmahmud.com/greeny/assets/ltr/home-standard.html

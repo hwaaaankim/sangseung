@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/fragments/front/common :: head('상승 특허 상표 조회 서비스')">
+
+</head>
+
+
+<body id="body">
+
+	<div id="wrapper">
+		<th:block th:replace="/fragments/front/common :: headMenu"></th:block>
+		<div class="clearfix"></div>
+
+		<div id="titlebar"
+			style="background: url('/front/images/new/title_background/09.jpg');">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h3 class="headline centered margin-top-75 page-title">
+							<strong class="mb-15">상승국제특허법률사무소</strong>
+							<p>Trade Mark Checking Service</p>
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row sticky-wrapper">
+
+
+				<div class="col-lg-12 col-md-12">
+					<div class="col-md-12">
+						<h3 class="headline centered">
+							<strong class="headline-with-separator">상표 검색 서비스</strong> <span>Trade Mark
+								Cheking Service</span>
+						</h3>
+					</div>
+					<div class="add-listing-section margin-top-120">
+						<div class="submit-section">
+							<div class="row with-forms">
+								<div class="col-md-3">
+									<h5>게시물수</h5>
+									<select class="chosen-select-no-single">
+										<option label="blank">--- 개씩 보기</option>
+										<option>10개씩 보기</option>
+										<option>30개씩 보기</option>
+										<option>50개씩 보기</option>
+										<option>100개씩 보기</option>
+									</select>
+								</div>
+								<div class="col-md-3">
+									<h5>출원인/상표 구분</h5>
+									<select class="chosen-select-no-single">
+										<option label="blank">--- 카테고리 검색</option>
+										<option>ALL</option>
+										<option>출원인 기준</option>
+										<option>상표 기준</option>
+									</select>
+								</div>
+								<div class="col-md-6">
+									<h5>제목 검색</h5>
+									<div class="row">
+										<div class="col-md-9">
+											<input type="text" placeholder="검색어를 입력 하세요">
+										</div>
+										<div class="col-md-3">
+											<a class="button medium none-border"><i
+												class="sl sl-icon-docs"></i>검색</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="search-text">
+								<p># 조회 내용은 상표의 등록가능성을 보장하지 않습니다.</p>
+								<p># 출원하고자 하는 대상에 따라 동일한 상표가 존재하더라도 등록 가능할 수 있습니다.</p>
+								<p># 정확한 등록 가능성 판단을 위해서는 변리사의 상담이 필수 입니다.</p>
+							</div>
+						</div>
+					</div>
+					<div class="dashboard-list-box margin-top-0">
+
+						<ul>
+							<li class="pending-booking">
+								<div class="list-box-listing bookings">
+									<div class="list-box-listing-img">
+										<img src="/front/images/new/mark01.jpg" alt="">
+									</div>
+									<div class="list-box-listing-content">
+										<div class="inner">
+											<h3>
+												상표명이 들어가는 자리입니다. <span class="booking-status pending">행정
+													상태</span><span class="booking-status unpaid">행정 상태</span>
+											</h3>
+
+											<div class="inner-booking-list">
+												<h5>출원일 :</h5>
+												<ul class="booking-list">
+													<li class="highlighted">22.01.01</li>
+												</ul>
+											</div>
+
+											<div class="inner-booking-list">
+												<h5>업종 분류 :</h5>
+												<ul class="booking-list">
+													<li class="highlighted">xx류(냉난방/조명/가전)</li>
+												</ul>
+											</div>
+
+											<div class="inner-booking-list">
+												<h5>출원인 :</h5>
+												<ul class="booking-list">
+													<li class="highlighted">출원인명</li>
+												</ul>
+											</div>
+
+											<div class="inner-booking-list">
+												<h5>출원인 정보 :</h5>
+												<ul class="booking-list">
+													<li>출원인 정보 01</li>
+													<li>출원인 정보 02</li>
+													<li>출원인 정보 03</li>
+												</ul>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="buttons-to-right">
+									<a href="/markupDetail" class="button medium"><i
+										class="sl sl-icon-check"></i> 상세보기</a>
+								</div>
+							</li>
+
+							<li class="pending-booking">
+								<div class="list-box-listing bookings">
+									<div class="list-box-listing-img">
+										<img src="/front/images/new/mark01.jpg" alt="">
+									</div>
+									<div class="list-box-listing-content">
+										<div class="inner">
+											<h3>
+												상표명이 들어가는 자리입니다. <span class="booking-status pending">행정
+													상태</span><span class="booking-status unpaid">행정 상태</span>
+											</h3>
+
+											<div class="inner-booking-list">
+												<h5>출원일 :</h5>
+												<ul class="booking-list">
+													<li class="highlighted">22.01.01</li>
+												</ul>
+											</div>
+
+											<div class="inner-booking-list">
+												<h5>업종 분류 :</h5>
+												<ul class="booking-list">
+													<li class="highlighted">xx류(냉난방/조명/가전)</li>
+												</ul>
+											</div>
+
+											<div class="inner-booking-list">
+												<h5>출원인 :</h5>
+												<ul class="booking-list">
+													<li class="highlighted">출원인명</li>
+												</ul>
+											</div>
+
+											<div class="inner-booking-list">
+												<h5>출원인 정보 :</h5>
+												<ul class="booking-list">
+													<li>출원인 정보 01</li>
+													<li>출원인 정보 02</li>
+													<li>출원인 정보 03</li>
+												</ul>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="buttons-to-right">
+									<a href="/markupDetail" class="button medium"><i
+										class="sl sl-icon-check"></i> 상세보기</a>
+								</div>
+							</li>
+							<li class="pending-booking">
+								<div class="list-box-listing bookings">
+									<div class="list-box-listing-img">
+										<img src="/front/images/new/mark01.jpg" alt="">
+									</div>
+									<div class="list-box-listing-content">
+										<div class="inner">
+											<h3>
+												상표명이 들어가는 자리입니다. <span class="booking-status pending">행정
+													상태</span><span class="booking-status unpaid">행정 상태</span>
+											</h3>
+
+											<div class="inner-booking-list">
+												<h5>출원일 :</h5>
+												<ul class="booking-list">
+													<li class="highlighted">22.01.01</li>
+												</ul>
+											</div>
+
+											<div class="inner-booking-list">
+												<h5>업종 분류 :</h5>
+												<ul class="booking-list">
+													<li class="highlighted">xx류(냉난방/조명/가전)</li>
+												</ul>
+											</div>
+
+											<div class="inner-booking-list">
+												<h5>출원인 :</h5>
+												<ul class="booking-list">
+													<li class="highlighted">출원인명</li>
+												</ul>
+											</div>
+
+											<div class="inner-booking-list">
+												<h5>출원인 정보 :</h5>
+												<ul class="booking-list">
+													<li>출원인 정보 01</li>
+													<li>출원인 정보 02</li>
+													<li>출원인 정보 03</li>
+												</ul>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="buttons-to-right">
+									<a href="/markupDetail" class="button medium"><i
+										class="sl sl-icon-check"></i> 상세보기</a>
+								</div>
+							</li>
+							<li class="pending-booking">
+								<div class="list-box-listing bookings">
+									<div class="list-box-listing-img">
+										<img src="/front/images/new/mark01.jpg" alt="">
+									</div>
+									<div class="list-box-listing-content">
+										<div class="inner">
+											<h3>
+												상표명이 들어가는 자리입니다. <span class="booking-status pending">행정
+													상태</span><span class="booking-status unpaid">행정 상태</span>
+											</h3>
+
+											<div class="inner-booking-list">
+												<h5>출원일 :</h5>
+												<ul class="booking-list">
+													<li class="highlighted">22.01.01</li>
+												</ul>
+											</div>
+
+											<div class="inner-booking-list">
+												<h5>업종 분류 :</h5>
+												<ul class="booking-list">
+													<li class="highlighted">xx류(냉난방/조명/가전)</li>
+												</ul>
+											</div>
+
+											<div class="inner-booking-list">
+												<h5>출원인 :</h5>
+												<ul class="booking-list">
+													<li class="highlighted">출원인명</li>
+												</ul>
+											</div>
+
+											<div class="inner-booking-list">
+												<h5>출원인 정보 :</h5>
+												<ul class="booking-list">
+													<li>출원인 정보 01</li>
+													<li>출원인 정보 02</li>
+													<li>출원인 정보 03</li>
+												</ul>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="buttons-to-right">
+									<a href="/markupDetail" class="button medium"><i
+										class="sl sl-icon-check"></i> 상세보기</a>
+								</div>
+							</li>
+							<li class="pending-booking">
+								<div class="list-box-listing bookings">
+									<div class="list-box-listing-img">
+										<img src="/front/images/new/mark01.jpg" alt="">
+									</div>
+									<div class="list-box-listing-content">
+										<div class="inner">
+											<h3>
+												상표명이 들어가는 자리입니다. <span class="booking-status pending">행정
+													상태</span><span class="booking-status unpaid">행정 상태</span>
+											</h3>
+
+											<div class="inner-booking-list">
+												<h5>출원일 :</h5>
+												<ul class="booking-list">
+													<li class="highlighted">22.01.01</li>
+												</ul>
+											</div>
+
+											<div class="inner-booking-list">
+												<h5>업종 분류 :</h5>
+												<ul class="booking-list">
+													<li class="highlighted">xx류(냉난방/조명/가전)</li>
+												</ul>
+											</div>
+
+											<div class="inner-booking-list">
+												<h5>출원인 :</h5>
+												<ul class="booking-list">
+													<li class="highlighted">출원인명</li>
+												</ul>
+											</div>
+
+											<div class="inner-booking-list">
+												<h5>출원인 정보 :</h5>
+												<ul class="booking-list">
+													<li>출원인 정보 01</li>
+													<li>출원인 정보 02</li>
+													<li>출원인 정보 03</li>
+												</ul>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="buttons-to-right">
+									<a href="/markupDetail" class="button medium"><i
+										class="sl sl-icon-check"></i> 상세보기</a>
+								</div>
+							</li>
+							<li class="pending-booking">
+								<div class="list-box-listing bookings">
+									<div class="list-box-listing-img">
+										<img src="/front/images/new/mark01.jpg" alt="">
+									</div>
+									<div class="list-box-listing-content">
+										<div class="inner">
+											<h3>
+												상표명이 들어가는 자리입니다. <span class="booking-status pending">행정
+													상태</span><span class="booking-status unpaid">행정 상태</span>
+											</h3>
+
+											<div class="inner-booking-list">
+												<h5>출원일 :</h5>
+												<ul class="booking-list">
+													<li class="highlighted">22.01.01</li>
+												</ul>
+											</div>
+
+											<div class="inner-booking-list">
+												<h5>업종 분류 :</h5>
+												<ul class="booking-list">
+													<li class="highlighted">xx류(냉난방/조명/가전)</li>
+												</ul>
+											</div>
+
+											<div class="inner-booking-list">
+												<h5>출원인 :</h5>
+												<ul class="booking-list">
+													<li class="highlighted">출원인명</li>
+												</ul>
+											</div>
+
+											<div class="inner-booking-list">
+												<h5>출원인 정보 :</h5>
+												<ul class="booking-list">
+													<li>출원인 정보 01</li>
+													<li>출원인 정보 02</li>
+													<li>출원인 정보 03</li>
+												</ul>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="buttons-to-right">
+									<a href="/markupDetail" class="button medium"><i
+										class="sl sl-icon-check"></i> 상세보기</a>
+								</div>
+							</li>
+							<li class="pending-booking">
+								<div class="list-box-listing bookings">
+									<div class="list-box-listing-img">
+										<img src="/front/images/new/mark01.jpg" alt="">
+									</div>
+									<div class="list-box-listing-content">
+										<div class="inner">
+											<h3>
+												상표명이 들어가는 자리입니다. <span class="booking-status pending">행정
+													상태</span><span class="booking-status unpaid">행정 상태</span>
+											</h3>
+
+											<div class="inner-booking-list">
+												<h5>출원일 :</h5>
+												<ul class="booking-list">
+													<li class="highlighted">22.01.01</li>
+												</ul>
+											</div>
+
+											<div class="inner-booking-list">
+												<h5>업종 분류 :</h5>
+												<ul class="booking-list">
+													<li class="highlighted">xx류(냉난방/조명/가전)</li>
+												</ul>
+											</div>
+
+											<div class="inner-booking-list">
+												<h5>출원인 :</h5>
+												<ul class="booking-list">
+													<li class="highlighted">출원인명</li>
+												</ul>
+											</div>
+
+											<div class="inner-booking-list">
+												<h5>출원인 정보 :</h5>
+												<ul class="booking-list">
+													<li>출원인 정보 01</li>
+													<li>출원인 정보 02</li>
+													<li>출원인 정보 03</li>
+												</ul>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="buttons-to-right">
+									<a href="/markupDetail" class="button medium"><i
+										class="sl sl-icon-check"></i> 상세보기</a>
+								</div>
+							</li>
+							<li class="pending-booking">
+								<div class="list-box-listing bookings">
+									<div class="list-box-listing-img">
+										<img src="/front/images/new/mark01.jpg" alt="">
+									</div>
+									<div class="list-box-listing-content">
+										<div class="inner">
+											<h3>
+												상표명이 들어가는 자리입니다. <span class="booking-status pending">행정
+													상태</span><span class="booking-status unpaid">행정 상태</span>
+											</h3>
+
+											<div class="inner-booking-list">
+												<h5>출원일 :</h5>
+												<ul class="booking-list">
+													<li class="highlighted">22.01.01</li>
+												</ul>
+											</div>
+
+											<div class="inner-booking-list">
+												<h5>업종 분류 :</h5>
+												<ul class="booking-list">
+													<li class="highlighted">xx류(냉난방/조명/가전)</li>
+												</ul>
+											</div>
+
+											<div class="inner-booking-list">
+												<h5>출원인 :</h5>
+												<ul class="booking-list">
+													<li class="highlighted">출원인명</li>
+												</ul>
+											</div>
+
+											<div class="inner-booking-list">
+												<h5>출원인 정보 :</h5>
+												<ul class="booking-list">
+													<li>출원인 정보 01</li>
+													<li>출원인 정보 02</li>
+													<li>출원인 정보 03</li>
+												</ul>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="buttons-to-right">
+									<a href="/markupDetail" class="button medium"><i
+										class="sl sl-icon-check"></i> 상세보기</a>
+								</div>
+							</li>
+							<li class="pending-booking">
+								<div class="list-box-listing bookings">
+									<div class="list-box-listing-img">
+										<img src="/front/images/new/mark01.jpg" alt="">
+									</div>
+									<div class="list-box-listing-content">
+										<div class="inner">
+											<h3>
+												상표명이 들어가는 자리입니다. <span class="booking-status pending">행정
+													상태</span><span class="booking-status unpaid">행정 상태</span>
+											</h3>
+
+											<div class="inner-booking-list">
+												<h5>출원일 :</h5>
+												<ul class="booking-list">
+													<li class="highlighted">22.01.01</li>
+												</ul>
+											</div>
+
+											<div class="inner-booking-list">
+												<h5>업종 분류 :</h5>
+												<ul class="booking-list">
+													<li class="highlighted">xx류(냉난방/조명/가전)</li>
+												</ul>
+											</div>
+
+											<div class="inner-booking-list">
+												<h5>출원인 :</h5>
+												<ul class="booking-list">
+													<li class="highlighted">출원인명</li>
+												</ul>
+											</div>
+
+											<div class="inner-booking-list">
+												<h5>출원인 정보 :</h5>
+												<ul class="booking-list">
+													<li>출원인 정보 01</li>
+													<li>출원인 정보 02</li>
+													<li>출원인 정보 03</li>
+												</ul>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="buttons-to-right">
+									<a href="/markupDetail" class="button medium"><i
+										class="sl sl-icon-check"></i> 상세보기</a>
+								</div>
+							</li>
+							<li class="pending-booking">
+								<div class="list-box-listing bookings">
+									<div class="list-box-listing-img">
+										<img src="/front/images/new/mark01.jpg" alt="">
+									</div>
+									<div class="list-box-listing-content">
+										<div class="inner">
+											<h3>
+												상표명이 들어가는 자리입니다. <span class="booking-status pending">행정
+													상태</span><span class="booking-status unpaid">행정 상태</span>
+											</h3>
+
+											<div class="inner-booking-list">
+												<h5>출원일 :</h5>
+												<ul class="booking-list">
+													<li class="highlighted">22.01.01</li>
+												</ul>
+											</div>
+
+											<div class="inner-booking-list">
+												<h5>업종 분류 :</h5>
+												<ul class="booking-list">
+													<li class="highlighted">xx류(냉난방/조명/가전)</li>
+												</ul>
+											</div>
+
+											<div class="inner-booking-list">
+												<h5>출원인 :</h5>
+												<ul class="booking-list">
+													<li class="highlighted">출원인명</li>
+												</ul>
+											</div>
+
+											<div class="inner-booking-list">
+												<h5>출원인 정보 :</h5>
+												<ul class="booking-list">
+													<li>출원인 정보 01</li>
+													<li>출원인 정보 02</li>
+													<li>출원인 정보 03</li>
+												</ul>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="buttons-to-right">
+									<a href="/markupDetail" class="button medium"><i
+										class="sl sl-icon-check"></i> 상세보기</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+					<div class="pagination-container margin-top-30 margin-bottom-0">
+						<nav class="pagination">
+							<ul>
+								<li><a href="#">First</a></li>
+								<li><a href="#"><i class="sl sl-icon-arrow-left"></i></a></li>
+								<li><a href="#" class="current-page">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#"><i class="sl sl-icon-arrow-right"></i></a></li>
+								<li><a href="#">Last</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<th:block th:replace="/fragments/front/common :: footer"></th:block>
+	</div>
+	<th:block th:replace="/fragments/front/common :: mainScript"></th:block>
+	<script src="/front/scripts/detail.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/front/common :: head('상승 특허 디자인 출원 서비스')">
+
+
+</head>
+<body id="body">
+
+	<div id="wrapper">
+		<th:block th:replace="fragments/front/common :: headMenu"></th:block>
+		<div class="clearfix"></div>
+
+		<div id="titlebar"
+			style="background: url('/front/images/new/title_background/04.jpg');">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h3 class="headline centered margin-top-75 page-title">
+							<strong class="mb-15">상승국제특허법률사무소</strong>
+							<p>Design Application Service</p>
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container scroll margin-bottom-75" id="design-detail">
+			<div class="row">
+				<div class="col-md-12">
+					<h3 class="headline centered">
+						<strong class="headline-with-separator">디자인 출원 상세</strong> <span>Design
+							Application Detail</span>
+					</h3>
+				</div>
+				<div class="col-md-4">
+					<img src="/front/images/new01/d01.png" alt="">
+				</div>
+				<div class="col-md-4">
+					<img src="/front/images/new01/d02.png" alt="">
+				</div>
+				<div class="col-md-4">
+					<img src="/front/images/new01/d03.png" alt="">
+				</div>
+			</div>
+		</div>
+		<section
+			class="fullwidth border-top padding-bottom-80 padding-top-80 margin-top-80" id="design-cost">
+			<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h3 class="headline centered">
+						<strong class="headline-with-separator">비용 안내</strong> <span>Design
+							Application Cost Information</span>
+					</h3>
+				</div>
+				<div class="col-md-12">
+					<div class="cost-text">
+						<div class="cost-subject">
+							<h3>
+								<i class="fa fa-fw">&#xf107;</i> 출원 비용 안내
+							</h3>
+						</div>
+						<div class="cost-content">
+							<p>
+								# 디자인등록시 비용은 심사를 신청하는<span class="under"> 출원시 비용 --- (1)
+								</span>과 심사를 통과 후 <span class="under"> 중간대응 비용 --- (2) </span>,그리고
+								심사 중간에 발생할 수 있는 <span class="under"> 등록시 발생하는 비용 --- (3) </span> 으로
+								구성되어 있습니다.
+							</p>
+							<p>
+								# 하기 금액은 <span class="under"> VAT가 포함된 금액</span> 입니다.
+							</p>
+						</div>
+					</div>
+					<table class="table table-bordered cost-table">
+						<thead>
+							<tr>
+								<th scope="col"></th>
+								<th scope="col"></th>
+								<th scope="col">기본</th>
+								<th scope="col">심화</th>
+								<th scope="col">스피드</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row" rowspan="5">출원시 비용</th>
+							</tr>
+							<tr>
+								<th scope="row">디자인출원전략 상담 수수료<i class="sl sl-icon-check"></i></th>
+								<td>100,000 원</td>
+								<td>100,000 원</td>
+								<td>100,000 원</td>
+							</tr>
+							<tr>
+								<th scope="row">입체물품 수수료(7도면 비용 포함)<i
+									class="sl sl-icon-check"></i><br>
+									<span style="color:red;">(* 입체물품 또는 평면물품 중 1개만 적용)</span></th>
+								<td>250,000 원</td>
+								<td>250,000 원</td>
+								<td>250,000 원</td>
+							</tr>
+							<tr>
+								<th scope="row">평면물품 수수료(도면 비용 포함)<i
+									class="sl sl-icon-check"></i><br>
+									<span style="color:red;">(* 입체물품 또는 평면물품 중 1개만 적용)</span></th>
+								<td>200,000 원</td>
+								<td>200,000 원</td>
+								<td>200,000 원</td>
+							</tr>
+							<tr>
+								<th scope="row">관납료</th>
+								<td>28,200 원</td>
+								<td>28,200 원</td>
+								<td>28,200 원</td>
+							</tr>
+							<tr>
+								<td></td>
+								<th scope="row">선행디자인 조사비용</th>
+								<td>---</td>
+								<td>150,000 원</td>
+								<td>150,000 원</td>
+							</tr>
+							<tr>
+								<th scope="row" rowspan="3">우선심사<a
+									href="https://www.kipo.go.kr/ko/kpoContentView.do?menuCd=SCD0200248">(우선심사요건
+										<i class="fa fa-fw">&#xf0a9;</i>)
+								</a>
+								</th>
+							</tr>
+							<tr>
+								<th scope="row">우선심사 수수료(1디자인)</th>
+								<td>---</td>
+								<td>---</td>
+								<td>170,000 원</td>
+							</tr>
+							<tr>
+								<th scope="row">우선심사 관납료</th>
+								<td>---</td>
+								<td>---</td>
+								<td>70,000 원</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="cost-sub-text">
+						<div class="cost-sub-content">
+							<p>
+								# 디자인 상담은 <span class="under">대면상담&방문상담(내방하여 상담을 진행함)</span>을
+								원칙으로 하고 있습니다.
+							</p>
+							<p>
+								# 변리사가 직접 방문하여 상담 진행시 <span class="under">200,000원</span>의 출장비용이
+								발생합니다.
+							</p>
+							<p>
+								# 출원전략 상담 수수료의 경우 <span class="under"> 출원 진행시 면제(대리인 수수료에
+									포함)</span> 됩니다.
+							</p>
+							<p>
+								# 상기 관납료의 경우 <span class="under"> 1 디자인을 기준으로</span> 작성 되었습니다.
+							</p>
+							<p>
+								# 도면 추가시 <span class="under"> 1도당 10,000원의 추가비용이</span> 발생할 수
+								있습니다.
+							</p>
+							<p>
+								# 우선심사 수수료는 <span class="under"> 우선심사신청 자격요건에 따라 변경</span>될 수
+								있습니다.
+							</p>
+							<p># 관납료는 특허청으로 부터 할인받는 경우(개인/중소기업 - 70%할인)에는 변동될 수 있습니다.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12 margin-top-50">
+					<div class="cost-text">
+						<div class="cost-subject">
+							<h3>
+								<i class="fa fa-fw">&#xf107;</i> 중간사건 비용 안내
+							</h3>
+						</div>
+						<div class="cost-content">
+							<p>
+								# 중간사건 이라 함은 특허 출원절차 진행 중 형식과 실질 내용에 대한 <span class="under">특허청의
+									행정절차에 대응</span>하는 것 입니다.
+							</p>
+
+						</div>
+					</div>
+					<table class="table table-bordered cost-table">
+						<thead>
+							<tr>
+								<th scope="col"></th>
+								<th scope="col"></th>
+								<th scope="col">기본</th>
+								<th scope="col">심화</th>
+								<th scope="col">스피드</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row" rowspan="5">중간사건 비용</th>
+							</tr>
+							<tr>
+								<th scope="row">기본대응(물품명 등 단순흠결)</th>
+								<td>150,000 원</td>
+								<td>150,000 원</td>
+								<td>150,000 원</td>
+							</tr>
+							<tr>
+								<th scope="row">심화대응(창작성 등 실체적 흠결)</th>
+								<td>250,000 원</td>
+								<td>250,000 원</td>
+								<td>250,000 원</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+				<div class="col-md-12 margin-top-50">
+					<div class="cost-text">
+						<div class="cost-subject">
+							<h3>
+								<i class="fa fa-fw">&#xf107;</i> 등록 비용 안내
+							</h3>
+						</div>
+						<div class="cost-content">
+							<p>
+								# 등록 비용은 특허청에 디자인이 등록되는 시점에 납입하는 비용으로 <span class="under">등록 성공 대리인 수수료와 관납료로 </span>구성 됩니다.
+							</p>
+							<p># 관납료는 특허청으로 부터 할인받는 경우(개인/중소기업 - 70%할인)에는 변동될 수 있습니다.</p>
+							<p>
+								# 하기 비용의 경우 <span class="under"> 1 디자인을 기준으로</span> 작성 되었습니다.
+							</p>
+						</div>
+					</div>
+					<table class="table table-bordered cost-table">
+						<thead>
+							<tr>
+								<th scope="col"></th>
+								<th scope="col"></th>
+								<th scope="col">기본</th>
+								<th scope="col">심화</th>
+								<th scope="col">스피드</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row" rowspan="5">등록 비용</th>
+							</tr>
+							<tr>
+								<th scope="row">법률 대리인 수수료</th>
+								<td>120,000 원</td>
+								<td>120,000 원</td>
+								<td>120,000 원</td>
+							</tr>
+							<tr>
+								<th scope="row">관납료</th>
+								<td>22,500 원</td>
+								<td>22,500 원</td>
+								<td>22,500 원</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+			</div>
+		</div>
+		</section>
+		<section
+			class="fullwidth border-top padding-bottom-80 padding-top-80 margin-top-80"
+			id="design-process">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h3 class="headline centered">
+							<strong class="headline-with-separator">디자인출원 절차안내</strong> <span>Design
+								Application Process Information</span>
+						</h3>
+					</div>
+					<div class="col-md-12">
+						<img src="/front/images/new/process/design-detail.png" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+		<th:block th:replace="fragments/front/common :: footer"></th:block>
+	</div>
+
+	<th:block th:replace="fragments/front/common :: mainScript"></th:block>
+</body>
+
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/fragments/front/common :: head('상승 특허 상표 조회 상세 페이지')">
+
+</head>
+
+<body id="body">
+
+    <div id="wrapper">
+        <th:block th:replace="/fragments/front/common :: headMenu"></th:block>
+        <div class="clearfix"></div>
+
+        <div id="titlebar" style="background:url('/front/images/new/title_background/10.jpg');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h3 class="headline centered margin-top-75 page-title">
+                            <strong class="mb-15">상표 상세 페이지</strong>
+                            <p>Trade Mark Detail Page</p>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row sticky-wrapper">
+                <div class="col-lg-12 col-md-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="headline centered">
+                                <strong class="headline-with-separator">상표 상세 페이지</strong>
+                                <span>Trade Mark Detail Page</span>
+                            </h3>
+                        </div>
+                        <div class="col-md-12">
+
+                            <div class="style-2" style="border-top:2px solid black;">
+                                <div class="toggle-wrap">
+                                    <span class="trigger"><a href="#" class="overall-main">상표상세조회_개요<i
+                                                class="sl sl-icon-plus"></i>
+                                            <div class="mark_detail">
+                                                <p class="overall-sub"># 특허청 API상태에 따라 실제 진행상황과 약간의 차이가 존재할 수
+                                                    있습니다.</p>
+                                                <p class="overall-sub"># 타인의 상표를 무단으로 사용하는 경우 <strong>1억 이하의 벌금 또는 7년
+                                                        이하의 형사처벌</strong>을
+                                                    받을 수 있습니다.</p>
+                                                <p class="overall-sub"># 하기 정보는 참고용으로 어떠한 <strong>법률적 보장을 제공하지
+                                                        않습니다</strong>.</p>
+                                            </div>
+                                        </a>
+                                    </span>
+
+                                    <div class="toggle-container">
+                                        <div class="row">
+                                            <div class="col-lg-5 col-md-12">
+                                                <div class="dashboard-list-box margin-top-0">
+                                                    <div class="dashboard-list-box-static mark-detail">
+                                                        <div
+                                                            class="listing-item-container compact order-summary-widget">
+                                                            <div class="listing-item" style="margin:0 auto;">
+                                                                <img src="/front/images/new/mark01.jpg" alt="">
+
+                                                                <div class="listing-item-content">
+                                                                    <h3>상표명</h3>
+                                                                    <span>XX류(XX/XX/XX 등)</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-7 col-md-12">
+                                                <div class="dashboard-list-box margin-top-0">
+                                                    <div class="dashboard-list-box-static mark-detail">
+
+                                                        <div class="my-profile">
+                                                            <label class="margin-top-0">현재 진행 상황</label>
+                                                            <input type="text" readonly value="출원중">
+
+                                                            <label>출원 번호</label>
+                                                            <input type="text" readonly value="xx-xxxx-xxxxxxx">
+
+                                                            <label>출원인</label>
+                                                            <input type="text" readonly value="xxx">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="style-2">
+                                <div class="toggle-wrap">
+                                    <span class="trigger"><a href="#" class="overall-main">출원상표_권리정보<i
+                                                class="sl sl-icon-plus"></i>
+                                            <div class="mark_detail">
+                                                <p class="overall-sub"># 검색한 상표가 출원시 지정한 상품에 대한 정보를 안내합니다.</p>
+                                            </div>
+                                        </a>
+                                    </span>
+
+                                    <div class="toggle-container">
+                                        <div class="row">
+                                            <div class="col-lg-5 col-md-12">
+                                                <div class="dashboard-list-box margin-top-0">
+                                                    <div class="dashboard-list-box-static mark-detail">
+                                                        <div
+                                                            class="listing-item-container compact order-summary-widget">
+                                                            <div class="listing-item" style="margin:0 auto;">
+                                                                <img src="/front/images/new/mark01.jpg" alt="">
+
+                                                                <div class="listing-item-content">
+                                                                    <h3>상표명</h3>
+                                                                    <span>XX류(XX/XX/XX 등)</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-7 col-md-12">
+                                                <div class="dashboard-list-box margin-top-0">
+                                                    <div class="dashboard-list-box-static mark-detail">
+
+                                                        <div class="my-profile">
+                                                            <label class="margin-top-0">현재 진행 상황</label>
+                                                            <input type="text" readonly value="출원중">
+
+                                                            <label>출원 번호</label>
+                                                            <input type="text" readonly value="xx-xxxx-xxxxxxx">
+
+                                                            <label>출원인</label>
+                                                            <input type="text" readonly value="xxx">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="style-2">
+                                <div class="toggle-wrap">
+                                    <span class="trigger"><a href="#" class="overall-main">출원상표_상세정보<i
+                                                class="sl sl-icon-plus"></i>
+                                            <div class="mark_detail">
+                                                <p class="overall-sub"># 검색한 상표의 상세정보를 제공합니다..</p>
+                                            </div>
+                                        </a>
+                                    </span>
+
+                                    <div class="toggle-container">
+                                        <div class="row">
+                                            <div class="col-lg-5 col-md-12">
+                                                <div class="dashboard-list-box margin-top-0">
+                                                    <div class="dashboard-list-box-static mark-detail">
+                                                        <div
+                                                            class="listing-item-container compact order-summary-widget">
+                                                            <div class="listing-item" style="margin:0 auto;">
+                                                                <img src="/front/images/new/mark01.jpg" alt="">
+
+                                                                <div class="listing-item-content">
+                                                                    <h3>상표명</h3>
+                                                                    <span>XX류(XX/XX/XX 등)</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-7 col-md-12">
+                                                <div class="dashboard-list-box margin-top-0">
+                                                    <div class="dashboard-list-box-static mark-detail">
+
+                                                        <div class="my-profile">
+                                                            <label class="margin-top-0">현재 진행 상황</label>
+                                                            <input type="text" readonly value="출원중">
+
+                                                            <label>출원 번호</label>
+                                                            <input type="text" readonly value="xx-xxxx-xxxxxxx">
+
+                                                            <label>출원인</label>
+                                                            <input type="text" readonly value="xxx">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="style-2">
+                                <div class="toggle-wrap">
+                                    <span class="trigger"><a href="#" class="overall-main">출원상표_법률적 진행상황<i
+                                                class="sl sl-icon-plus"></i>
+                                            <div class="mark_detail">
+                                                <p class="overall-sub"># 현재 법률적, 행정적으로 어떠한 상태에 있는지에 대한 정보를 제공합니다.</p>
+
+                                            </div>
+                                        </a>
+                                    </span>
+
+                                    <div class="toggle-container">
+                                        <div class="row">
+                                            <div class="col-lg-5 col-md-12">
+                                                <div class="dashboard-list-box margin-top-0">
+                                                    <div class="dashboard-list-box-static mark-detail">
+                                                        <div
+                                                            class="listing-item-container compact order-summary-widget">
+                                                            <div class="listing-item" style="margin:0 auto;">
+                                                                <img src="/front/images/new/mark01.jpg" alt="">
+
+                                                                <div class="listing-item-content">
+                                                                    <h3>상표명</h3>
+                                                                    <span>XX류(XX/XX/XX 등)</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-7 col-md-12">
+                                                <div class="dashboard-list-box margin-top-0">
+                                                    <div class="dashboard-list-box-static mark-detail">
+
+                                                        <div class="my-profile">
+                                                            <label class="margin-top-0">현재 진행 상황</label>
+                                                            <input type="text" readonly value="출원중">
+
+                                                            <label>출원 번호</label>
+                                                            <input type="text" readonly value="xx-xxxx-xxxxxxx">
+
+                                                            <label>출원인</label>
+                                                            <input type="text" readonly value="xxx">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <th:block th:replace="/fragments/front/common :: footer"></th:block>
+    </div>
+
+
+
+    <th:block th:replace="/fragments/front/common :: mainScript"></th:block>
+	<script src="/front/scripts/detail.js"></script>
+
+</body>
+
+</html>

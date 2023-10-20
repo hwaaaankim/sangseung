@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/front/common :: head('상승 특허 비밀번호 찾기')">
+
+
+</head>
+<body id="body">
+
+    <div id="wrapper">
+        <th:block th:replace="fragments/front/common :: headMenu"></th:block>
+        <div class="clearfix"></div>
+
+        <div id="titlebar" style="background:url('/front/images/new/title_background/14.jpg');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h3 class="headline centered margin-top-75 page-title">
+                            <strong class="mb-15">상승국제특허법률사무소</strong>
+                            <p>Member Sign In Page</p>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container scroll margin-bottom-75">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="headline centered">
+                        <strong class="headline-with-separator">회원 비밀번호 찾기</strong>
+                        <span>Member Find PASSWORD</span>
+                    </h3>
+                </div>
+                <div class="add-listing-section margin-top-120 p-0 login-section">
+	                <form method="post" th:action="@{/FindINFO}">
+	                    <div class="separated-form">
+	                        <div class="add-listing-section">
+	
+	                            <div class="add-listing-headline">
+	                                <h3><i class="sl sl-icon-doc"></i>가입 정보 입력</h3>
+	                            </div>
+	
+	                            <div class="row with-forms">
+	                                <div class="col-md-12">
+	                                    <h5>휴대폰번호 <i class="tip" data-tip-content="휴대폰 번호를 입력 해 주세요."></i></h5>
+	                                    <input class="search-field" 
+	                                    type="text" 
+	                                    name="phone" 
+	                                    placeholder="-를 제외하고 입력 해 주세요."
+	                                    oninput="autoHyphenCheck(this)" maxlength="13" 
+	                                    required="required"
+	                                    />
+	                                    <input type="hidden" value="password" name="code">
+	                                </div>
+	                                <div class="col-md-12">
+	                                    <h5>아이디 <i class="tip" data-tip-content="아이디를 입력 해 주세요."></i></h5>
+	                                    <input class="search-field" 
+	                                    type="text" 
+	                                    name="userId" 
+	                                    placeholder="아이디를 입력 해 주세요"
+	                                    required="required"
+	                                    />
+	                                </div>
+	                            </div>
+	                            <div class="alert alert-danger" role="alert">
+		                            <p># 입력하신 휴대폰 번호로 가입할 때 사용한 ID를 문자로 안내해 드립니다.</p>
+						        </div>
+	                            <div class="alert alert-danger" role="alert" th:if="${FindCODE}">
+	                            	<p class="alert-text" th:if="${FindCODE == 'FAIL'}"># 연락처와 아이디가 일치하지 않습니다. 다시 확인해 주세요.</p>
+						    		<p class="alert-text" th:if="${FindCODE == 'NONE'}"># 등록되지 않은 연락처 입니다. 회원가입을 진행 해 주세요.</p>
+						    		<p class="alert-text blueText" th:if="${FindCODE == 'SUCCESS'}"># 휴대폰 번호로 초기화된 비밀번호를 발송 해 드렸습니다.</p>
+						    		
+						        </div>
+	                        </div>
+	                        <div class="login-btn-section">
+	                            <button type="submit" class="button login-btn" style="margin-bottom:10px;">비밀번호찾기 <i class="fa fa-arrow-circle-right"></i></button>
+	                        </div>
+	                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <th:block th:replace="fragments/front/common :: footer"></th:block>
+    </div>
+
+  <th:block th:replace="fragments/front/common :: mainScript"></th:block>
+
+</body>
+
+</html>

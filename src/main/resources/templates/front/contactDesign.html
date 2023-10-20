@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/front/common :: head('상승 특허 디자인 문의')">
+
+
+</head>
+
+<body id="body">
+
+    <div id="wrapper">
+        <th:block th:replace="fragments/front/common :: headMenu"></th:block>
+        <div class="clearfix"></div>
+
+        <div id="titlebar" style="background:url('/front/images/new/title_background/03.jpg');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h3 class="headline centered margin-top-75 page-title">
+                            <strong class="mb-15">상승국제특허법률사무소</strong>
+                            <p>Contact Page</p>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container scroll margin-bottom-75">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="headline centered">
+                        <strong class="headline-with-separator">문의하기</strong>
+                        <span>Contact - Design</span>
+                    </h3>
+                </div>
+                 <div class="col-md-12">
+                    <div class="style-1">
+
+                        <div class="tabs-container">
+                            <div class="tab-content">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div id="myCalendar01" class="vanilla-calendar"></div>
+                                    </div>
+                                    <div class="col-md-8">
+
+                                        <section id="contact">
+                                            <form method="post" action="/my/contactProc" enctype="multipart/form-data">
+												
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-25">
+                                                        <select class="chosen-select" name="subject">
+                                                            <option value="선택없음">희망하시는 상담 내용을 선택 해 주세요.</option>
+                                                            <option value="디자인 출원 상담">상표 출원 상담</option>
+                                                            <option value="소송/심판 관련 상담">소송/심판 관련 상담</option>
+                                                            <option value="디자인 관련 등록가능성 상담">상표 관련 등록가능성 상담</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6 mb-25">
+                                                        <select class="chosen-select" name="sort">
+                                                            <option value="선택없음">희망하시는 상담 형태를 선택 해 주세요.</option>
+                                                            <option value="내방상담">내방 상담</option>
+                                                            <option value="출장상담">출장 상담</option>
+                                                        </select>
+                                                    </div>
+                                                    <p class="info-message ml-20"># 출원 혹은 등록가능성에 대한 솔루션에 따라 비용 변경이 발생할 수 있습니다.
+                                                    </p>
+                                                    <p class="info-message ml-20"># 출장 상담 시 출장비가 발생할 수 있습니다.
+                                                    </p>
+                                                    <p class="info-message ml-20"># 자세한 비용은 <a href="/design">이곳<i
+                                                                class="fa fa-fw">&#xf00c;</i></a>을 참고해 주세요.
+                                                    </p>
+                                                    <div class="col-md-6">
+                                                        <div>
+                                                            <input name="name" type="text" disabled="disabled" th:value="${member.name}"/>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div>
+                                                            <input name="email" type="email" disabled="disabled" th:value="${member.email}"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div>
+                                                            <input name="text" type="text" disabled="disabled" th:value="${member.phone}"/>
+                                                            <p class="info-message"># 문자 수신이 불가능한 번호인 경우 '내정보관리-정보변경'을 통해 문자 수신이 가능한 연락처로
+                                                             변경 해 주시기 바랍니다.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <select class="chosen-select"
+                                                            data-placeholder="상담희망시간을 선택 해 주세요." name="inquirytime">
+                                                            <option label="상담희망시간"></option>
+                                                            <option value="10 AM">10 AM</option>
+                                                            <option value="11 AM">11 AM</option>
+                                                            <option value="12 AM">12 AM</option>
+                                                            <option value="13 AM">13 PM</option>
+                                                            <option value="14 AM">14 PM</option>
+                                                            <option value="15 AM">15 PM</option>
+                                                            <option value="16 AM">16 PM</option>
+                                                            <option value="17 AM">17 PM</option>
+                                                        </select>
+                                                        <p class="info-message"># 다른 상담일정이 있는 경우 변경될 수 있습니다.</p>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="switcher-content">
+
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <table id="pricing-list-container">
+                                                                <tr class="pricing-list-item pattern">
+                                                                    <td>
+                                                                        <div class="fm-input pricing-name">
+                                                                            <input type="text"
+                                                                                placeholder="디자인의 대상이 되는 상품을 입력 해 주세요." required="required" name="keywords"/>
+                                                                        </div>
+                                                                        <div class="fm-close">
+	                                                                        <a class="delete" href="#">
+	                                                                        	<i class="fa fa-remove"></i>
+	                                                                        </a>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <a href="#" class="button add-pricing-list-item mt-0">+ 등록상품 추가하기</a>
+                                                        </div>
+                                                    </div>
+                                                    <p class="info-message"># 상담을 희망하고자 하는 디자인에 대하여 키워드를 입력 해 주세요.
+                                                    </p>
+                                                    <p class="info-message"># 1회 업로드 가능 용량은 20MB입니다. 초과하는 경우 contact@sangseungip.co.kr 메일로 보내주시기 바랍니다.</p>
+                                                    <p class="info-message"># jpg / jpeg / pdf / png / zip 확장자를 지원합니다.</p>
+                                                </div>
+
+                                                <div>
+                                                    <textarea cols="40" rows="3" id="comments" name="comments"
+                                                        placeholder="디자인이 등록될 상품에 관련하여 내용을 입력 해 주세요." required="required" spellcheck="true"></textarea>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="filebox col-md-12">
+                                                        <input class="upload-name" value="첨부파일" placeholder="첨부파일">
+                                                        <p class="info-message"># 디자인도안/손그림/디자인이미지 등 필요한 서류를 보내주시면 더욱 신속한
+                                                            상담이 가능합니다.
+                                                        </p>
+                                                        <label for="file"># 파일찾기</label>
+                                                        <input type="file" id="file" multiple="multiple" name="files">
+                                                    </div>
+
+                                                </div>	
+                                                <input type="hidden" name="inquirydate" id="inquirydate">
+                                                <input type="hidden" name="code" value="디자인문의">
+                                                <input type="submit" class="submit button" value="상담신청하기" />
+
+                                            </form>
+                                        </section>
+                                        <div class="sidebar-textbox">
+                                            <p># 서비스 신청 후 문자메시지를 통해 절차가 안내됩니다.
+                                            </p>
+                                            <p># 궁금한 점이 있는 경우 <span class="underline">상세신청페이지</span> 혹은 <span
+                                                    class="underline">전화상담
+                                                </span>을 이용 해 주세요.
+                                            </p>
+                                            <p># 특허출원 상담의 경우 기술분야 및 권리범위에 대한 상담을 위해 대면상담을 권장드립니다.
+                                            </p>
+                                            <p># 서비스 신청 시 상담을 희망하시는 날짜와 시간을 선택 해 주세요.
+                                            </p>
+                                            <p># 상담 희망일을 선택하지 않으시는 경우 추후 전화상담을 통해 날짜/시간 지정이 가능합니다.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <th:block th:replace="fragments/front/common :: footer"></th:block>
+    </div>
+
+    <th:block th:replace="fragments/front/common :: mainScript"></th:block>
+    <script src="/front/scripts/plugins/vanilla-calendar.js"></script>
+    <script>
+    	var dateArea = document.getElementById('inquirydate');
+        let myCalendar01 = new VanillaCalendar({
+            selector: "#myCalendar01",
+            pastDates: false,
+
+            months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+            shortWeekday: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+            onSelect: (data, elem) => {
+            	dateArea.value = data.date.substring(0,15);
+            }
+        })
+
+        $("#file").on('change', function (e) {
+        	if(e.target.files.length>5){
+        		alert('파일은 최대 5까지 업로드 가능합니다.');
+        		return;
+        	}
+        	var size = 0;
+        	for(var i=0;i<e.target.files.length;i++){
+        		size += e.target.files[i].size;
+        	}
+        	if(size > 20000000){
+        		alert('1회 업로드 가능 용량은 20MB입니다.')
+        		return;
+        	}
+            var fileName = $("#file").val();
+            if(e.target.files.length > 1){
+            	$(".upload-name").val(fileName + ' 외 ' + (e.target.files.length-1)+'개의 파일...');				            	
+            }else{
+	            $(".upload-name").val(fileName);
+            }
+        });
+    </script>
+</body>

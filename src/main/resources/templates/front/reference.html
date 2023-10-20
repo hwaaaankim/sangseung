@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/front/common :: head('상승 특허 자료실')">
+
+
+</head>
+<body id="body">
+
+	<div id="wrapper">
+		<th:block th:replace="fragments/front/common :: headMenu"></th:block>
+		<div class="clearfix"></div>
+
+		<div id="titlebar"
+			style="background: url('/front/images/new/title_background/02.jpg');">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h3 class="headline centered margin-top-75 page-title">
+							<strong class="mb-15">상승국제특허법률사무소</strong>
+							<p>Reference Center</p>
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container scroll margin-bottom-75">
+			<div class="row">
+				<div class="col-md-12">
+					<h3 class="headline centered">
+						<strong class="headline-with-separator">자료실</strong> <span>Reference Center</span>
+					</h3>
+				</div>
+				<div class="add-listing-section margin-top-120">
+					<div class="submit-section">
+						<div class="row with-forms">
+							<div class="col-md-4">
+								<h5>게시물수</h5>
+								<select class="chosen-select-no-single">
+									<option label="blank">--- 개씩 보기</option>
+									<option>10개씩 보기</option>
+									<option>30개씩 보기</option>
+									<option>50개씩 보기</option>
+									<option>100개씩 보기</option>
+								</select>
+							</div>
+							<div class="col-md-4">
+								<h5>제목 검색</h5>
+								<input type="text" placeholder="검색어를 입력 하세요">
+							</div>
+
+							<div class="col-md-4">
+								<h5>카테고리 검색</h5>
+								<select class="chosen-select-no-single">
+									<option label="blank">--- 카테고리 검색</option>
+									<option>비용 관련</option>
+									<option>가격 관련</option>
+									<option>절차 관련</option>
+									<option>기타 공지</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-12 col-md-12">
+					<div class="dashboard-list-box invoices with-icons margin-top-20">
+						<ul>
+
+							<li><i class="list-box-icon sl sl-icon-doc"></i> <strong>디자인 출원 및 등록 비용 상세안내.</strong>
+								<ul>
+									<li class="paid"># 디자인 안내서류</li>
+									<li>업로드 날짜 : 23/01/01</li>
+								</ul>
+								<div class="buttons-to-right">
+									<a href="/front/files/aboutDesign.pdf" download class="button gray">다운로드</a>
+								</div>
+							</li>
+
+							<li><i class="list-box-icon sl sl-icon-doc"></i> <strong>특허 출원 및 등록 비용 상세안내.</strong>
+								<ul>
+									<li class="paid"># 특허 안내서류</li>
+									<li>업로드 날짜 : 23/01/01</li>
+								</ul>
+								<div class="buttons-to-right">
+									<a href="/front/files/aboutPatent.pdf" class="button gray">다운로드</a>
+								</div>
+							</li>
+							<li><i class="list-box-icon sl sl-icon-doc"></i> <strong>상표 출원 및 등록 비용 상세안내.</strong>
+								<ul>
+									<li class="paid"># 상표 안내서류</li>
+									<li>업로드 날짜 : 23/01/01</li>
+								</ul>
+								<div class="buttons-to-right">
+									<a href="/front/files/aboutTradeMark.pdf" class="button gray">다운로드</a>
+								</div>
+							</li>
+							<li><i class="list-box-icon sl sl-icon-doc"></i> <strong>배철훈 변리사님 심결문집.</strong>
+								<ul>
+									<li class="paid"># 업적 관련서류</li>
+									<li>업로드 날짜 : 23/01/01</li>
+								</ul>
+								<div class="buttons-to-right">
+									<a href="/front/files/books.pdf" download class="button gray">다운로드</a>
+								</div>
+							</li>
+							<li><i class="list-box-icon sl sl-icon-doc"></i> <strong>법률 대리인 위임장.</strong>
+								<ul>
+									<li class="paid"># 절차 관련서류</li>
+									<li>업로드 날짜 : 23/01/01</li>
+								</ul>
+								<div class="buttons-to-right">
+									<a href="/front/files/carte.pdf" download class="button gray">다운로드</a>
+								</div>
+							</li>
+							<li><i class="list-box-icon sl sl-icon-doc"></i> <strong>법률 대리인 위임장.</strong>
+								<ul>
+									<li class="paid"># 절차 관련서류</li>
+									<li>업로드 날짜 : 23/01/01</li>
+								</ul>
+								<div class="buttons-to-right">
+									<a href="/front/files/carte.pdf" download class="button gray">다운로드</a>
+								</div>
+							</li>
+							<li><i class="list-box-icon sl sl-icon-doc"></i> <strong>개인용 특허 고객번호부여 신청서.</strong>
+								<ul>
+									<li class="paid"># 절차 관련서류</li>
+									<li>업로드 날짜 : 23/01/01</li>
+								</ul>
+								<div class="buttons-to-right">
+									<a href="/front/files/applyPrivate.pdf" download class="button gray">다운로드</a>
+								</div>
+							</li>
+							<li><i class="list-box-icon sl sl-icon-doc"></i> <strong>법인용 특허 고객번호부여 신청서.</strong>
+								<ul>
+									<li class="paid"># 절차 관련서류</li>
+									<li>업로드 날짜 : 23/01/01</li>
+								</ul>
+								<div class="buttons-to-right">
+									<a href="/front/files/applyCompany.pdf" download class="button gray">다운로드</a>
+								</div>
+							</li>
+						</ul>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="pagination-container margin-top-30">
+									<nav class="pagination">
+										<ul>
+											<li><a href="#"><i class="sl sl-icon-arrow-left"></i></a></li>
+											<li><a href="#" class="current-page">1</a></li>
+											<li><a href="#"><i class="sl sl-icon-arrow-right"></i></a></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<th:block th:replace="fragments/front/common :: footer"></th:block>
+	</div>
+	<th:block th:replace="fragments/front/common :: mainScript"></th:block>
+</body>
+
+</html>

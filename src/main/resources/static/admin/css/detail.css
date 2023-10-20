@@ -1,0 +1,26 @@
+.btn-wrap {
+  padding-left: 10px;
+}
+.sorting-wrap div {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+.main-chart {
+  padding-top: 20px;
+}
+.search-section {
+  margin-bottom: 30px;
+}
+.content-panel {
+  padding: 20px;
+}
+p.help-block {
+  margin-bottom: 0px;
+  line-height: 1.4;
+}
+.super-text{
+	vertical-align:super;
+	color:#e5e5e5;
+	padding-left:5px;
+}

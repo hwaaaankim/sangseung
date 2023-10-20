@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/front/common :: head('상승 특허 나의 문의 내역')">
+
+
+</head>
+
+<body>
+
+	<div id="wrapper">
+		<th:block th:replace="fragments/front/common :: dashboardHead"></th:block>
+		<div class="clearfix"></div>
+		<div id="dashboard">
+
+			<a href="#" class="dashboard-responsive-nav-trigger"><i
+				class="fa fa-reorder"></i> Dashboard Navigation</a>
+
+			<th:block th:replace="fragments/front/common :: dashboardNav"></th:block>
+			<div class="dashboard-content">
+				<div id="titlebar">
+					<div class="row">
+						<div class="col-md-12">
+							<nav id="breadcrumbs">
+								<ul>
+									<li><a href="#">Home</a></li>
+									<li>내 문의내역</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-12 col-md-12">
+						<div class="dashboard-list-box margin-top-0">
+							<h4 class="gray">내 문의내역</h4>
+
+							<div class="dashboard-list-box-static"></div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-md-12">
+					<div class="copyrights">© 2022 SangSeung. All Rights
+						Reserved.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<th:block th:replace="fragments/front/common :: dashboardScript"></th:block>
+
+</body>
+
+</html>

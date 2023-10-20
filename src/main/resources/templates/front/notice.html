@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/front/common :: head('상승 특허 공지사항')">
+
+
+</head>
+
+<body id="body">
+
+	<div id="wrapper">
+		<th:block th:replace="fragments/front/common :: headMenu"></th:block>
+		<div class="clearfix"></div>
+
+		<div id="titlebar"
+			style="background: url('/front/images/new/title_background/11.jpg');">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h3 class="headline centered margin-top-75 page-title">
+							<strong class="mb-15">상승국제특허법률사무소</strong>
+							<p>Notice Information</p>
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container scroll margin-bottom-75">
+			<div class="row">
+				<div class="col-md-12">
+					<h3 class="headline centered">
+						<strong class="headline-with-separator">공지사항</strong> <span>Notice</span>
+					</h3>
+				</div>
+				<div class="add-listing-section margin-top-120">
+					<div class="submit-section">
+						<div class="row with-forms">
+							<div class="col-md-4">
+								<h5>게시물수</h5>
+								<select class="chosen-select-no-single">
+									<option label="blank">--- 개씩 보기</option>
+									<option>10개씩 보기</option>
+									<option>30개씩 보기</option>
+									<option>50개씩 보기</option>
+									<option>100개씩 보기</option>
+								</select>
+							</div>
+							<div class="col-md-4">
+								<h5>제목 검색</h5>
+								<input type="text" placeholder="검색어를 입력 하세요">
+							</div>
+
+							<div class="col-md-4">
+								<h5>카테고리 검색</h5>
+								<select class="chosen-select-no-single">
+									<option label="blank">--- 카테고리 검색</option>
+									<option>가격 관련</option>
+									<option>절차 관련</option>
+									<option>기타 공지</option>
+								</select>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+
+					<div class="style-2">
+						<div class="toggle-wrap">
+							<span class="trigger"><a href="#" class="overall-main"><span
+									class="im im-icon-Geo3-Star important-notice"></span>상승국제특허법률사무소가 온라인 서비스를 게시합니다.<i class="sl sl-icon-plus"></i>
+									<p class="overall-sub">
+										<span class="im im-icon-Calendar-4 fw-600"></span> 공지일 : <span>2023-01-01</span>
+										/ <span class="im im-icon-Business-Man"></span> 작성자 : <span>관리자</span>
+										/ <span># 기타</span>
+									</p> </a> </span>
+
+							<div class="toggle-container">
+								<div class="row">
+									<div class="col-md-12">
+										<h4 class="headline with-border margin-top-0 margin-bottom-35">상승국제특허법률사무소가 온라인 서비스를 게시합니다.</h4>
+										<blockquote>상승국제특허법률사무소(이하 '상승특허')가
+고객과의 원활한 소통은 물론 편리한 업무처리를 위하여 
+온라인플랫폼 서비스(상승IP)를 게시합니다. 
+
+사이트 문의는 물론 카카오톡/채널톡/전화상담을 
+통한 다양한 소통창구를 통해 여러분에게 편리함을 제공하고자 하니 
+많은 관심 부탁드립니다.</blockquote>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="pagination-container margin-top-30">
+								<nav class="pagination">
+									<ul>
+										<li><a href="#"><i class="sl sl-icon-arrow-left"></i></a></li>
+										<li><a href="#" class="current-page">1</a></li>
+										<li><a href="#"><i class="sl sl-icon-arrow-right"></i></a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<th:block th:replace="fragments/front/common :: footer"></th:block>
+	</div>
+	<th:block th:replace="fragments/front/common :: mainScript"></th:block>
+</body>
+
+</html>
